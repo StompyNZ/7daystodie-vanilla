@@ -1386,7 +1386,7 @@
     <NoiseScale name="1"/>
     <MaxVoices name="1"/>
     <MaxEntities name="30"/>
-    <MaxRepeatRate name="0.01"/>
+    <MaxRepeatRate name="1.0"/>
   </SoundDataNode>
   <SoundDataNode name="player2landSoft">
     <AudioSource name="Sounds/AudioSource_Player"/>
@@ -1550,7 +1550,7 @@
     <NoiseScale name="1"/>
     <MaxVoices name="1"/>
     <MaxEntities name="30"/>
-    <MaxRepeatRate name="0.01"/>
+    <MaxRepeatRate name="1.0"/>
   </SoundDataNode>
   <SoundDataNode name="player1landSoft">
     <AudioSource name="Sounds/AudioSource_Player"/>
@@ -4418,6 +4418,7 @@
   <SoundDataNode name="Supply_Crate_Plane_lp">
     <AudioSource name="Sounds/AudioSource_Distant"/>
     <AudioClip ClipName="Sounds/SupplyDrops/Supply_Crate_Plane_lp" Loop="true"/>
+    <IgnoreDistanceCheck/>
     <LocalCrouchVolumeScale name="0.5"/>
     <CrouchNoiseScale name="0.5"/>
     <NoiseScale name="1"/>

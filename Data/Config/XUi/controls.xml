@@ -143,13 +143,30 @@
       <sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -60" foregroundlayer="true"/>
       <sprite depth="4" name="durability" width="70" height="10" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -60" foregroundlayer="true"/>
       <sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
-      <label depth="7" name="stackValue" pos="-2,-45" width="70" height="28" text="Test" font_size="26" effect="outline" justify="center"/>
+      <label depth="7" name="stackValue" pos="-2,-45" width="70" height="28" text="{ItemCount}" font_size="26" effect="outline" justify="center"/>
       <label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]"/>
       <sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
       <label depth="12" name="itemName" pos="0,0" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline"/>
       <sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{IsAssembleLocked}" pos="14,-14" foregroundlayer="true"/>
     </rect>
   </item_stack>
+  <required_item_stack>
+    <rect controller="RequiredItemStack" style="itemStack, hover">
+      <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false"/>
+      <sprite depth="3" name="background" sprite="menu_empty3px" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
+      <sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
+      <sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{ItemIcon}" pos="35,-30" pivot="center" foregroundlayer="true" color="{IconColor}"/>
+      <sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true"/>
+      <sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -60" foregroundlayer="true"/>
+      <sprite depth="4" name="durability" width="70" height="10" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -60" foregroundlayer="true"/>
+      <sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+      <label depth="7" name="stackValue" pos="-2,-45" width="70" height="28" text="{ItemCount}" font_size="26" effect="outline" justify="right"/>
+      <label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]"/>
+      <sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+      <label depth="12" name="itemName" pos="0,0" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline"/>
+      <sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{IsAssembleLocked}" pos="14,-14" foregroundlayer="true"/>
+    </rect>
+  </required_item_stack>
   <creative_stack>
     <rect controller="CreativeStack" style="itemStack, hover, scroll">
       <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false"/>
@@ -180,7 +197,7 @@
       <sprite depth="4" name="itemIcon" width="86" height="60" atlas="ItemIconAtlas" sprite="{ItemIcon}" pos="0,-10" pivot="topleft" foregroundlayer="true" color="{IconColor}"/>
       <sprite depth="3" name="durabilityBackground" height="10" color="64,64,64,0" type="sliced" pos="0, -76" foregroundlayer="true"/>
       <sprite depth="4" name="durability" height="10" color="[transparent]" type="filled" pos="0, -76" foregroundlayer="true"/>
-      <label depth="5" name="stackValue" pos="6,-60" width="72" height="28" text="Test" effect="outline" justify="center" font_size="26"/>
+      <label depth="5" name="stackValue" pos="6,-60" width="72" height="28" text="{ItemCount}" effect="outline" justify="center" font_size="26"/>
     </rect>
   </drag_item_stack>
   <recipe_stack>

@@ -129,7 +129,7 @@
     <property class="lock">
       <property name="class" value="Lock"/>
       <property name="slot_type" value="lock"/>
-      <property name="part_damage_reduction" value="1"/>
+      <property name="part_damage_reduction" value="0.75"/>
       <property name="parent_part" value="chassis"/>
     </property>
     <property class="ignition">

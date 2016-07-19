@@ -278,6 +278,12 @@ Both harvest and destroy events can be limited to only fire if the correct tool 
 This does not disable ungated events. They fire as well.
 
 
+Note that you do NOT get the "disassemble" animation with just a destroy event.
+You need to do it this way:
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+	<drop event="Destroy" name="workbench" count="1" tool_category="Disassemble" />
+
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 

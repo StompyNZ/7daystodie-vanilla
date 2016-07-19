@@ -46,6 +46,25 @@
   </entitygroup>
   <entitygroup name="ZombiesWastelandNight">
     <entity name="spiderzombie"/>
+    <entity name="zombieBoe"/>
+    <entity name="zombieJoe"/>
+    <entity name="zombieSteve"/>
+    <entity name="zombieMoe"/>
+    <entity name="zombieYo"/>
+    <entity name="zombieArlene"/>
+    <entity name="zombieDarlene"/>
+    <entity name="zombieMarlene"/>
+    <entity name="zombieNurse"/>
+    <entity name="hornet"/>
+    <entity name="zombiedog"/>
+    <entity name="zombieSteveCrawler"/>
+    <entity name="fatzombiecop"/>
+    <entity name="burntzombie"/>
+    <entity name="zombieBear"/>
+    <entity name="zombieferal"/>
+  </entitygroup>
+  <entitygroup name="ZombiesWastelandNight2">
+    <entity name="spiderzombie"/>
     <entity name="zombieBoe" prob="0.05"/>
     <entity name="zombieJoe" prob="0.05"/>
     <entity name="zombieSteve" prob="0.05"/>
@@ -59,27 +78,9 @@
     <entity name="zombiedog" prob="0.15"/>
     <entity name="zombieSteveCrawler" prob="0.05"/>
     <entity name="fatzombiecop" prob="0.15"/>
-    <entity name="burntzombie" prob="0.05"/>
-    <entity name="zombieBear" prob="0.05"/>
-    <entity name="zombieferal" prob="0.05"/>
-  </entitygroup>
-  <entitygroup name="ZombiesWastelandNight2">
-    <entity name="zombieBoe" prob="0.03"/>
-    <entity name="zombieJoe" prob="0.03"/>
-    <entity name="zombieSteve" prob="0.03"/>
-    <entity name="zombieMoe" prob="0.03"/>
-    <entity name="zombieYo" prob="0.03"/>
-    <entity name="zombieArlene"/>
-    <entity name="zombieDarlene"/>
-    <entity name="zombieMarlene"/>
-    <entity name="zombieNurse"/>
-    <entity name="spiderzombie" prob="0.15"/>
-    <entity name="hornet" prob="0.15"/>
-    <entity name="zombiedog" prob="0.20"/>
-    <entity name="zombieSteveCrawler" prob="0.03"/>
+    <entity name="burntzombie" prob="0.07"/>
     <entity name="zombieBear" prob="0.1"/>
-    <entity name="fatzombiecop" prob="0.2"/>
-    <entity name="burntzombie" prob="0.03"/>
+    <entity name="zombieferal" prob="0.1"/>
   </entitygroup>
   <entitygroup name="ZombiesHoard">
     <entity name="spiderzombie"/>

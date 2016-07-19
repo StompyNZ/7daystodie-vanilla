@@ -9,7 +9,7 @@
         <texture name="male_base_hair" color="255,255,255"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="0,0,255"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -138,7 +138,7 @@
         <texture name="female_hair_01" color="255,255,255"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="0,0,255"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
@@ -162,7 +162,7 @@
         <texture name="unisex_shirt" color="255,255,255"/>
       </part>
       <part slot="legs" layer="base" mesh="female_clothes_denim_pants">
-        <texture name="female_pants_01" color="255,255,255"/>
+        <texture name="female_pants_01" color="90,115,110"/>
       </part>
       <part slot="feet" layer="base" mesh="female_worn_boots">
         <texture name="female_worn_boots" color="255,255,255"/>
@@ -267,7 +267,7 @@
         <texture name="male_shaggy_hair" color="200,200,200"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="99,62,14"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -291,7 +291,7 @@
         <texture name="unisex_gear_cowboyhat" color="20,20,20"/>
       </part>
       <part slot="chest" layer="base" mesh="male_shirt">
-        <texture name="unisex_shirt" color="50,200,200"/>
+        <texture name="unisex_shirt" color="100,135,185"/>
       </part>
       <part slot="chest" layer="outer" mesh="male_clothes_leather_duster">
         <texture name="unisex_clothes_leather_duster" color="255,255,255"/>
@@ -394,12 +394,10 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_base_face">
         <texture name="female_head_old" color="255,255,255"/>
-      </part>
-      <part slot="head" layer="inner" mesh="female_shaggy_hair">
-        <texture name="female_shaggy_hair" color="199,199,199"/>
+        <texture name="female_hair_overlay" color="160,160,160"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="99,62,14"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
@@ -521,6 +519,7 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="male_base_face">
         <texture name="male_head" color="170,138,105"/>
+        <texture name="male_hair_overlay" color="23,23,23"/>
       </part>
       <part slot="head" layer="inner" mesh="male_base_hair">
         <texture name="male_base_hair" color="23,23,23"/>
@@ -529,7 +528,7 @@
         <texture name="male_shaggy_hair" color="23,23,23"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="51,20,0"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -653,6 +652,7 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_base_face">
         <texture name="female_head" color="69,49,43"/>
+        <texture name="female_hair_overlay" color="30,10,10"/>
       </part>
       <part slot="head" layer="outer" mesh="female_base_eyelashes">
         <texture name="female_eyelashes" color="255,255,255"/>
@@ -661,7 +661,7 @@
         <texture name="unisex_hair_dreads" color="30,10,10"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="99,62,14"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
@@ -793,7 +793,7 @@
         <texture name="male_shaggy_hair" color="200,20,20"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="0,0,255"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -924,13 +924,13 @@
         <texture name="female_hair_overlay" color="30,25,23"/>
       </part>
       <part slot="head" layer="outer" mesh="female_asian_eyelashes">
-        <texture name="female_eyelashes" color="255,255,255"/>
+        <texture name="female_eyelashes_thick" color="255,255,255"/>
       </part>
       <part slot="head" layer="inner" mesh="female_shaggy_hair">
         <texture name="female_shaggy_hair" color="35,27,27"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_asian_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris_large" color="60,30,30"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
@@ -1059,7 +1059,7 @@
         <texture name="male_shaggy_hair" color="20,20,20"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="99,62,14"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -1195,7 +1195,7 @@
         <texture name="female_shaggy_hair" color="120,35,3"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="70,120,70"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
@@ -1319,12 +1319,13 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="male_base_face">
         <texture name="male_head" color="59,39,33"/>
+        <texture name="male_hair_overlay" color="10,10,10"/>
       </part>
       <part slot="head" layer="inner" mesh="unisex_hair_afro">
         <texture name="unisex_hair_afro" color="10,10,10"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="40,30,24"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -1451,6 +1452,7 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_base_face">
         <texture name="female_head" color="255,255,255"/>
+        <texture name="female_hair_overlay" color="230,200,160"/>
       </part>
       <part slot="head" layer="outer" mesh="female_base_eyelashes">
         <texture name="female_eyelashes" color="255,255,255"/>
@@ -1459,7 +1461,7 @@
         <texture name="female_hair_01" color="230,200,160"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="200,200,255"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
@@ -1598,7 +1600,7 @@
         <texture name="male_shaggy_hair" color="100,100,100"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="99,62,14"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -1728,6 +1730,7 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_base_face">
         <texture name="female_head" color="170,138,105"/>
+        <texture name="female_hair_overlay" color="20,20,20"/>
       </part>
       <part slot="head" layer="outer" mesh="female_base_eyelashes">
         <texture name="female_eyelashes" color="255,255,255"/>
@@ -1736,7 +1739,7 @@
         <texture name="female_shaggy_hair" color="30,30,30"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="99,62,14"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
@@ -1863,6 +1866,7 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_base_face">
         <texture name="female_head" color="170,138,105"/>
+        <texture name="female_hair_overlay" color="30,10,10"/>
       </part>
       <part slot="head" layer="outer" mesh="female_base_eyelashes">
         <texture name="female_eyelashes" color="255,255,255"/>
@@ -1871,7 +1875,7 @@
         <texture name="unisex_hair_dreads" color="30,10,10"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="99,90,14"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
@@ -2003,7 +2007,7 @@
         <texture name="male_shaggy_hair" color="100,100,100"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_asian_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="40,20,20"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -2127,15 +2131,16 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="male_base_face">
         <texture name="male_head_old" color="200,200,200"/>
+        <texture name="male_hair_overlay" color="20,20,20"/>
       </part>
       <part slot="head" layer="inner" mesh="male_shaggy_hair">
-        <texture name="male_shaggy_hair" color="30,30,30"/>
+        <texture name="male_shaggy_hair" color="40,40,40"/>
       </part>
       <part slot="face" layer="base" mesh="male_spaniard_goatee">
         <texture name="male_shaggy_hair" color="30,30,30"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="99,62,14"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">
@@ -2266,12 +2271,13 @@
       <part slot="head" layer="base" mesh="male_base_face">
         <texture name="male_head" color="190,175,175"/>
         <texture name="male_head_beard" color="50,30,30"/>
+        <texture name="male_hair_overlay" color="50,30,30"/>
       </part>
       <part slot="head" layer="inner" mesh="male_base_hair">
         <texture name="male_base_hair" color="60,40,30"/>
       </part>
       <part slot="eyes" layer="base" mesh="male_base_eyes">
-        <texture name="unisex_eyes" color="255,255,255"/>
+        <texture name="unisex_eye_shaded" color="255,255,255"/>
         <texture name="unisex_iris" color="100,112,75"/>
       </part>
       <part slot="hands" layer="base" mesh="male_base_hands">

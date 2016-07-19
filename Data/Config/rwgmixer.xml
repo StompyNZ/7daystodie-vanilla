@@ -174,7 +174,6 @@
       <prefab rule="carlots" max_count="1"/>
     </prefab_rule>
     <prefab_rule name="townBuildings">
-      <prefab rule="signsAndLights" prob="0.1"/>
       <prefab rule="garages" max_count="8" prob="0.1"/>
       <prefab rule="gunStores" max_count="1"/>
       <prefab rule="pharmacies" max_count="1"/>
@@ -192,13 +191,14 @@
       <prefab rule="gasStations" min_count="1" max_count="1" prob="20"/>
       <prefab rule="diners" max_count="1"/>
       <prefab name="water_tower_02" min_count="1" max_count="1"/>
-      <prefab rule="abandoned_houses"/>
+      <prefab rule="abandoned_houses" max_count="5"/>
       <prefab rule="lowerClassHousing"/>
-      <prefab rule="middleClassHousing" max_count="2"/>
-      <prefab rule="upperClassHousing" max_count="2"/>
+      <prefab rule="middleClassHousing"/>
+      <prefab rule="upperClassHousing"/>
       <prefab rule="burntHousing"/>
       <prefab rule="settlements" max_count="1"/>
       <prefab rule="carlots" max_count="1"/>
+      <prefab rule="signsAndLights" prob="0.1"/>
     </prefab_rule>
     <prefab_rule name="countryHousing">
       <prefab name="church_graveyard1"/>
