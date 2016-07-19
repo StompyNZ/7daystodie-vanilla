@@ -259,7 +259,7 @@
       <rect depth="1" pos="3,0" name="preview" width="147" height="150">
         <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="153" height="153" color="[black]" type="sliced" fillcenter="false"/>
         <sprite depth="1" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
-        <sprite depth="2" name="itemPreview" width="120" height="83" atlas="ItemIconAtlas" sprite="{ItemIcon}" color="{ItemIconTint}" pos="13,-30"/>
+        <sprite depth="2" name="itemPreview" width="120" height="83" atlas="ItemIconAtlas" sprite="{ItemIcon}" color="{ItemIconTint}" pos="13,-30" foregroundlayer="true"/>
         <sprite depth="3" name="durabilityBackground" height="20" width="145" color="48,48,48,255" type="sliced" pos="1, -127" visible="{HasDurability}"/>
         <sprite depth="4" name="durabilityBar" height="20" width="145" color="{DurabilityColor}" type="filled" pos="1, -127" fill="{DurabilityFill}" visible="{HasDurability}"/>
         <label depth="7" name="durabilityValue" pos="0,-118" width="145" height="32" text="{DurabilityText}" font_size="30" justify="{DurabilityJustify}" effect="outline"/>
@@ -394,7 +394,7 @@
       </grid>
     </rect>
   </window>
-  <window name="windowForgeInput" width="228" height="204" panel="Right" controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay">
+  <window name="windowForgeInput" width="228" height="204" panel="Right" controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]">
     <panel style="header.panel">
       <sprite style="header.icon" sprite="ui_game_symbol_forge"/>
       <label style="header.name" text="INPUT" text_key="xuiSmelting"/>
@@ -439,7 +439,8 @@
     </rect>
   </window>
   <window name="windowToolbelt" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 87" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{ToolbeltVisible}">
-    <rect disablefallthrough="true" on_press="true">
+    <rect>
+      <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true"/>
       <grid depth="1" name="inventory" rows="1" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Toolbelt" repeat_content="true">
         <item_stack name="0"/>
       </grid>
@@ -992,26 +993,27 @@
       <label depth="3" name="time" width="75" height="24" pivot="center" justify="center" text=" " font_size="22"/>
     </rect>
   </window>
-  <window name="windowSkillList" panel="Center" width="597" height="791" controller="SkillListWindow">
+  <window name="windowSkillList" panel="Center" width="647" height="791" controller="SkillListWindow">
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-      <sprite pos="10,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_skills"/>
-      <label style="header.name" text="ALL SKILLS" text_key="xuiAllSkills"/>
-      <label pos="540, -9" depth="2" name="unlockedCount" width="64" height="28" text="{SkillsUnlocked}" font_size="26" color="[lightGrey]" justify="right" pivot="topright"/>
+      <sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="{CategoryIcon}"/>
+      <label style="header.name" text="{TitleName}"/>
+      <label pos="635, -9" depth="2" name="unlockedCount" width="84" height="28" text="{TotalSkills}" font_size="26" color="[lightGrey]" justify="right" pivot="topright"/>
     </panel>
     <panel name="content" pos="-3,-43" height="669" depth="1" disableautobackground="true">
-      <rect name="categoryHeader" pos="6,-6" width="594" height="43">
-        <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="597" height="49" color="[black]" type="sliced" fillcenter="false"/>
+      <rect name="categoryHeader" pos="6,-3" width="644" height="43">
+        <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="647" height="46" color="[black]" type="sliced" fillcenter="false"/>
         <sprite depth="1" name="background" color="[mediumGrey]" type="sliced"/>
         <panel depth="1" pos="3,-3" width="410" height="37" disableautobackground="true">
-          <grid name="categories" pos="0,0" rows="1" cols="7" width="568" height="34" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
+          <grid name="categories" pos="-3,-6" rows="1" cols="9" width="568" height="34" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
             <category_icon/>
           </grid>
         </panel>
-        <panel depth="1" pos="284,0" width="200" disableautobackground="true">
+        <sprite depth="1" name="background" color="[mediumGrey]" type="sliced"/>
+        <panel depth="1" pos="394,0" width="200" disableautobackground="true">
           <sprite depth="1" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
           <skill_search depth="2" name="searchInput"/>
         </panel>
-        <panel depth="2" pos="460,0" width="104" height="43" disableautobackground="true" controller="Paging">
+        <panel depth="2" pos="540,0" width="104" height="43" disableautobackground="true" controller="Paging">
           <button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
           <rect depth="4" pos="37,-7">
             <sprite name="background" style="icon30px" color="[black]" type="sliced"/>
@@ -1020,37 +1022,37 @@
           <button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
         </panel>
       </rect>
-      <rect name="tableHeader" pos="5,-52" width="595" height="43">
+      <rect name="tableHeader" pos="5,-49" width="645" height="43">
         <sprite depth="1" name="background" color="[lightGrey]" type="sliced"/>
-        <rect depth="1" width="286" height="40">
-          <sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-2,3" width="288" height="46" color="[black]" type="sliced" fillcenter="false"/>
+        <rect depth="1" width="336" height="40">
+          <sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-2,3" width="338" height="46" color="[black]" type="sliced" fillcenter="false"/>
           <sprite depth="1" pos="3,-3" style="icon32px, press, hover" sprite="ui_game_symbol_skills"/>
           <label depth="1" pos="40,-8" upper_case="true" text="Skill/Perk Name" text_key="xuiSkillPerkName" width="240"/>
         </rect>
-        <rect depth="1" pos="286,0" width="100" height="40">
+        <rect depth="1" pos="336,0" width="100" height="40">
           <sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="106" height="46" color="[black]" type="sliced" fillcenter="false"/>
           <sprite depth="1" pos="3,-3" style="icon32px, press, hover" sprite="ui_game_symbol_percent"/>
           <label depth="1" pos="40,-8" upper_case="true" text="Level" text_key="xuiLevel" width="70"/>
         </rect>
-        <rect depth="1" pos="389,0" width="100" height="40">
+        <rect depth="1" pos="439,0" width="100" height="40">
           <sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="106" height="46" color="[black]" type="sliced" fillcenter="false"/>
           <sprite depth="1" pos="3,-3" style="icon32px, press, hover" sprite="ui_game_symbol_perk"/>
           <label depth="1" pos="40,-8" upper_case="true" text="Type" text_key="xuiType" width="70"/>
         </rect>
-        <rect depth="1" pos="492,0" width="100" height="40">
+        <rect depth="1" pos="542,0" width="100" height="40">
           <sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="106" height="46" color="[black]" type="sliced" fillcenter="false"/>
           <sprite depth="1" pos="3,-3" style="icon32px, press, hover" sprite="ui_game_symbol_loot_sack"/>
           <label depth="1" pos="40,-8" upper_case="true" text="Cost" text_key="xuiCost" width="55"/>
         </rect>
       </rect>
-      <grid name="skills" rows="14" cols="1" pos="6,-95" cell_width="595" cell_height="46" controller="SkillList" repeat_content="true" arrangement="vertical">
+      <grid name="skills" rows="14" cols="1" pos="6,-92" cell_width="645" cell_height="46" controller="SkillList" repeat_content="true" arrangement="vertical">
         <skill_entry name="0"/>
       </grid>
     </panel>
   </window>
   <window name="windowSkillInfo" width="603" height="470" panel="Right" controller="SkillInfoWindow">
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-      <sprite pos="10,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_skills"/>
+      <sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_skills"/>
       <label style="header.name" text="{GroupName}"/>
       <label pos="594, -9" depth="2" width="300" height="28" text="{SkillPointsAvailable}" font_size="26" color="[lightGrey]" justify="right" pivot="topright"/>
     </panel>
@@ -1070,10 +1072,14 @@
         <sprite depth="1" name="background" color="[mediumGrey]" type="sliced"/>
         <sprite depth="6" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="455" height="236" color="[black]" type="sliced" fillcenter="false"/>
         <label depth="2" name="descriptionText" pos="6,-8" width="442" height="218" text="{GroupDescription}"/>
+        <label depth="2" name="XpToNextLevel" pos="6,-205" width="200" height="30" text="XP TO NEXT LEVEL:" visible="{SkillPercentShouldShow}"/>
+        <sprite depth="2" pos="159,-214" height="12" width="289" type="sliced" color="[black]" visible="{SkillPercentShouldShow}"/>
+        <sprite depth="3" pos="160,-215" height="10" width="287" color="[lightGrey]" foregroundlayer="true" visible="{SkillPercentShouldShow}" type="sliced"/>
+        <sprite depth="3" pos="160,-215" height="10" width="287" color="[red]" foregroundlayer="true" type="filled" fill="{SkillPercentThisLevel}" visible="{SkillPercentShouldShow}"/>
       </rect>
       <rect depth="1" pos="0,-234" width="600" height="197">
         <sprite depth="1" name="background" color="[darkGrey]" type="sliced"/>
-        <sprite depth="3" pos="0,1" width="603" height="197" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false"/>
+        <sprite depth="3" pos="0,1" width="603" height="198" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false"/>
         <rect name="tableHeader" pos="0,0" width="600" height="43">
           <sprite depth="1" name="background" color="[lightGrey]" type="sliced"/>
           <rect depth="1" width="303" height="40">

@@ -255,6 +255,72 @@
     <item name="44MagBullet" count="1,12" prob="0.1"/>
     <item name="steelArrow" count="1,12"/>
   </lootgroup>
+  <lootgroup name="tshirtAll">
+    <item name="tshirtBlack"/>
+    <item name="tshirtBlue"/>
+    <item name="tshirtBrown"/>
+    <item name="tshirtGreen"/>
+    <item name="tshirtRed"/>
+    <item name="tshirtWhite"/>
+  </lootgroup>
+  <lootgroup name="bandanaAll">
+    <item name="bandana"/>
+    <item name="bandanaBlack"/>
+    <item name="bandanaBlue"/>
+    <item name="bandanaBrown"/>
+    <item name="bandanaGreen"/>
+    <item name="bandanaRed"/>
+  </lootgroup>
+  <lootgroup name="pantsAll">
+    <item name="denimPants"/>
+    <item name="blackDenimPants"/>
+    <item name="brownDenimPants"/>
+    <item name="redDenimPants"/>
+    <item name="armyPants"/>
+  </lootgroup>
+  <lootgroup name="pufferCoatAll">
+    <item name="pufferCoat"/>
+    <item name="pufferCoatBlack"/>
+    <item name="pufferCoatBrown"/>
+    <item name="pufferCoatGreen"/>
+    <item name="pufferCoatRed"/>
+  </lootgroup>
+  <lootgroup name="shirtLongAll">
+    <item name="shirt"/>
+    <item name="shirtBlack"/>
+    <item name="shirtBlue"/>
+    <item name="shirtBrown"/>
+    <item name="shirtGreen"/>
+    <item name="shirtRed"/>
+    <item name="armyShirt"/>
+  </lootgroup>
+  <lootgroup name="skullCapAll">
+    <item name="skullCap"/>
+    <item name="skullCapBlack"/>
+    <item name="skullCapBlue"/>
+    <item name="skullCapBrown"/>
+    <item name="skullCapGreen"/>
+    <item name="skullCapRed"/>
+  </lootgroup>
+  <lootgroup name="sweatshirtAll">
+    <item name="sweatshirt"/>
+    <item name="sweatshirtBlack"/>
+    <item name="sweatshirtBlue"/>
+    <item name="sweatshirtBrown"/>
+    <item name="sweatshirtGreen"/>
+    <item name="sweatshirtRed"/>
+  </lootgroup>
+  <lootgroup name="tankTopAll">
+    <item name="tankTopBlue"/>
+    <item name="tankTopGreen"/>
+    <item name="tankTopPurple"/>
+    <item name="tankTopRed"/>
+    <item name="tankTopWhite"/>
+  </lootgroup>
+  <lootgroup name="cowboyHatAll">
+    <item name="cowboyHat"/>
+    <item name="blackCowboyHat"/>
+  </lootgroup>
   <lootgroup name="hazmatGear">
     <item name="hazmatBoots"/>
     <item name="hazmatPants"/>
@@ -449,6 +515,7 @@
     <item name="canSoup"/>
     <item name="canStock"/>
     <item name="canTuna"/>
+    <item name="canPears"/>
     <item name="foodHoney"/>
     <item name="cornMeal"/>
   </lootgroup>
@@ -536,70 +603,41 @@
     <item name="oil" count="1,4"/>
     <item name="spring" count="1,4"/>
     <item group="rareAutomotive"/>
+    <item name="flashlight02" prob="0.05"/>
   </lootgroup>
   <lootgroup name="hats">
-    <item name="cowboyHat"/>
-    <item name="skullCap"/>
+    <item group="cowboyHatAll"/>
+    <item group="skullCapAll"/>
     <item name="ballCap"/>
     <item name="miningHelmet"/>
     <item name="clothHat"/>
     <item name="footballHelmet"/>
   </lootgroup>
   <lootgroup name="clothes">
-    <item name="blackDenimPants"/>
-    <item name="redDenimPants"/>
-    <item name="brownDenimPants"/>
-    <item name="cowboyHat"/>
+    <item group="pufferCoatAll"/>
+    <item group="skullCapAll"/>
+    <item group="shirtLongAll"/>
+    <item group="pantsAll"/>
+    <item group="tankTopAll"/>
+    <item group="bandanaAll"/>
+    <item group="sweatshirtAll"/>
+    <item group="cowboyHatAll"/>
+    <item group="tshirtAll"/>
     <item name="ballCap"/>
     <item name="miningHelmet"/>
-    <item name="denimPants"/>
-    <item name="tankTopWhite"/>
-    <item name="tankTopRed"/>
-    <item name="tankTopPurple"/>
-    <item name="tankTopGreen"/>
-    <item name="tankTopBlue"/>
     <item name="wornBoots"/>
-    <item name="bandana"/>
-    <item name="bandanaRed"/>
-    <item name="bandanaBlue"/>
-    <item name="bandanaGreen"/>
-    <item name="bandanaBrown"/>
-    <item name="bandanaBlack"/>
     <item name="shades"/>
     <item name="aviatorGoggles"/>
-    <item name="shirt"/>
-    <item name="shirtRed"/>
-    <item name="shirtGreen"/>
-    <item name="shirtBrown"/>
     <item name="footballHelmet"/>
-    <item name="skullCap"/>
-    <item name="skullCapRed"/>
-    <item name="skullCapGreen"/>
-    <item name="skullCapBlue"/>
-    <item name="skullCapBrown"/>
     <item name="leatherDuster"/>
-    <item name="pufferCoat"/>
-    <item name="pufferCoatRed"/>
-    <item name="pufferCoatGreen"/>
-    <item name="pufferCoatBrown"/>
-    <item name="pufferCoat"/>
   </lootgroup>
   <lootgroup name="warmClothes">
-    <item name="blackDenimPants"/>
-    <item name="redDenimPants"/>
-    <item name="brownDenimPants"/>
-    <item name="denimPants"/>
-    <item name="wornBoots"/>
+    <item group="pufferCoatAll"/>
+    <item group="skullCapAll"/>
+    <item group="shirtLongAll"/>
+    <item group="pantsAll"/>
+    <item group="sweatshirtAll"/>
     <item name="shades"/>
-    <item name="shirt"/>
-    <item name="shirtRed"/>
-    <item name="shirtGreen"/>
-    <item name="shirtBrown"/>
-    <item name="skullCap"/>
-    <item name="skullCapRed"/>
-    <item name="skullCapGreen"/>
-    <item name="skullCapBlue"/>
-    <item name="skullCapBrown"/>
     <item name="leatherDuster"/>
   </lootgroup>
   <lootgroup name="lightArmor">
@@ -672,25 +710,29 @@
     <item name="wrench"/>
     <item name="repairKit" count="1,4"/>
     <item group="rareTools"/>
+    <item name="forgedIron" count="1,2" prob=".21"/>
+    <item name="forgedSteel" count="1,2" prob=".12"/>
   </lootgroup>
   <lootgroup name="workingStiffs" count="1">
-    <item name="pickaxeIron" prob="0.1"/>
-    <item name="shovelIron" prob="0.1"/>
-    <item name="fireaxeIron" prob="0.1"/>
-    <item name="hoeIron" prob="0.1"/>
-    <item name="wrench" prob="0.1"/>
-    <item name="repairKit" count="1,4" prob="0.1"/>
-    <item name="woodFrameBlock" count="10,30" prob="0.1"/>
-    <item name="rebarFrameBlock" count="10,30" prob="0.1"/>
-    <item name="wood" count="50,250" prob="0.1"/>
-    <item name="anvil" count="1" prob="0.1"/>
-    <item name="ironDoor1_v1" prob="0.1"/>
-    <item name="sledgehammer" prob="0.1"/>
-    <item name="sledgehammerSchematic" prob="0.05"/>
-    <item name="calipers" prob="0.05"/>
-    <item name="toolAndDieSet" prob="0.05"/>
-    <item group="rareTools" prob="0.1"/>
-    <item group="automotive" prob=".2"/>
+    <item name="pickaxeIron"/>
+    <item name="shovelIron"/>
+    <item name="fireaxeIron"/>
+    <item name="hoeIron"/>
+    <item name="wrench"/>
+    <item name="repairKit" count="1,4"/>
+    <item name="woodFrameBlock" count="10,30"/>
+    <item name="rebarFrameBlock" count="10,30"/>
+    <item name="wood" count="50,250"/>
+    <item name="anvil" count="1"/>
+    <item name="ironDoor1_v1"/>
+    <item name="sledgehammer"/>
+    <item name="sledgehammerSchematic" prob="0.5"/>
+    <item name="calipers" prob="0.5"/>
+    <item name="toolAndDieSet" prob="0.5"/>
+    <item group="rareTools"/>
+    <item group="automotive" prob="2"/>
+    <item name="forgedIron" count="1,2" prob="0.21"/>
+    <item name="forgedSteel" count="1,2" prob="0.12"/>
   </lootgroup>
   <lootgroup name="rareMedicine" count="1">
     <item name="firstAidKit"/>
@@ -716,31 +758,24 @@
     <item name="gunPowder" count="20,50"/>
     <item name="bulletCasing" count="20,50"/>
     <item name="bulletTip" count="20,50"/>
+    <item name="steelArrowHead"/>
     <item name="cookingGrill"/>
+    <item name="cookingPot"/>
     <item name="leather"/>
-    <item name="goggles"/>
-    <item name="nightvisionGoggles"/>
     <item name="firstAidKit"/>
     <item name="padlock"/>
-    <item name="skullCap"/>
     <item name="bedroll"/>
-    <item name="skullCap"/>
-    <item name="skullCapGreen"/>
-    <item name="skullCapBrown"/>
-    <item name="ballCap"/>
-    <item name="denimPants"/>
-    <item name="wornBoots"/>
-    <item name="bandana"/>
-    <item name="bandanaGreen"/>
-    <item name="bandanaBrown"/>
-    <item name="bandanaBlack"/>
+    <item group="skullCapAll"/>
+    <item group="shirtLongAll"/>
+    <item group="pantsAll"/>
+    <item group="bandanaAll"/>
+    <item group="tshirtAll"/>
+    <item name="goggles"/>
     <item name="shades"/>
-    <item name="shirt"/>
-    <item name="shirtRed"/>
-    <item name="shirtBrown"/>
+    <item name="nightvisionGoggles"/>
+    <item name="ballCap"/>
+    <item name="wornBoots"/>
     <item name="footballHelmet"/>
-    <item name="brownDenimPants"/>
-    <item name="steelArrowHead"/>
   </lootgroup>
   <lootgroup name="beverages" count="1">
     <item name="emptyJar"/>
@@ -770,6 +805,8 @@
     <item name="fireaxeIron" prob="1"/>
     <item group="rareTools" prob="0.5"/>
     <item name="militaryFiber" count="1,5" prob="0.1"/>
+    <item name="forgedIron" count="1,2" prob="0.00636"/>
+    <item name="forgedSteel" count="1,2" prob="0.00424"/>
   </lootgroup>
   <lootcontainer id="1" count="0,2" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
     <item group="junk"/>

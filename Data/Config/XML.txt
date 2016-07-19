@@ -266,6 +266,18 @@ Maybe later. Not a priority.
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="1" prob=".4" />
 
 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Disassembling (wrench)
+
+	<drop event="Destroy" name="barbedFence" count="1" tool_category="Disassemble" />
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+
+Both harvest and destroy events can be limited to only fire if the correct tool is used.
+
+This does not disable ungated events. They fire as well.
+
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
@@ -867,13 +879,20 @@ I used these templates to assign armor values to "other stuff".
 		<property name="DegradationMax"       value="72,180" />
 	</property>
 
-
 	<property class="Attributes"> <!-- plantFiberClothes -->
 		<property name="ConcussiveProtection" value="0.09,0.15" />
 		<property name="PunctureProtection"   value="0.09,0.15" />
 		<property name="FireProtection"       value="0.12,0.2" />
 		<property name="RadiationProtection"  value="0.06,0.1" />
 		<property name="DegradationMax"       value="72,180" />
+	</property>
+
+	<property class="Attributes"> <!-- clothWarm -->
+		<property name="ConcussiveProtection" value="0.08,0.2" />
+		<property name="PunctureProtection"   value="0.08,0.2" />
+		<property name="FireProtection"       value="0.12,0.2" />
+		<property name="RadiationProtection"  value="0.06,0.1" />
+		<property name="DegradationMax"       value="80,200" />
 	</property>
 
 

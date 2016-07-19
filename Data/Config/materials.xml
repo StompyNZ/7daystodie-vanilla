@@ -624,7 +624,7 @@
     <property name="stepsound" value="stone"/>
     <property name="stability_glue" value="1"/>
     <property name="Mass" type="int" value="1"/>
-    <property name="MaxDamage" value="200"/>
+    <property name="MaxDamage" value="400"/>
   </material>
   <material id="Mcobblestone">
     <property name="damage_category" value="stone"/>

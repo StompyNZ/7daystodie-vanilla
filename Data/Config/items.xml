@@ -114,7 +114,7 @@
       <property name="Range" value="2.4"/>
       <property name="Sphere" value="0.2"/>
       <property name="Block_range" value="4"/>
-      <property name="Sound_start" value="swoosh"/>
+      <property name="Sound_start" value="SlowSwoosh"/>
       <property name="Stamina_usage" value="15"/>
       <property name="Buff" value="criticalBlunt,stunned,sprainedLeg"/>
       <property name="Buff_chance" value=".5,.3,.3"/>
@@ -849,6 +849,7 @@
       <property name="DamageBlock" value="1"/>
       <property name="Stamina_usage" value="3"/>
       <property name="DamageBonus.head" value="2"/>
+      <property name="DamageBonus.organic" value="5"/>
     </property>
     <property class="Action1">
       <property name="Class" value="Eat"/>
@@ -865,8 +866,6 @@
       <property name="Buff_chance" value="0.5"/>
     </property>
     <property class="Attributes">
-      <property name="EntityDamage" value="5,5"/>
-      <property name="BlockDamage" value="1,1"/>
       <property name="DismembermentBaseChance" value="0,0"/>
       <property name="DismembermentBonus" value="0,0"/>
     </property>
@@ -1027,6 +1026,7 @@
       <property name="DamageBonus.wood" value="1"/>
       <property name="DamageBonus.metal" value="0.5"/>
       <property name="DamageBonus.earth" value="0.25"/>
+      <property name="DamageBonus.organic" value="1"/>
       <property name="ActionExp" value="1"/>
       <property name="ToolCategory.Butcher" value="0.5"/>
     </property>
@@ -1085,11 +1085,12 @@
       <property name="DamageBonus.stone" value=".25"/>
       <property name="DamageBonus.metal" value=".25"/>
       <property name="DamageBonus.earth" value=".2"/>
+      <property name="DamageBonus.organic" value="1"/>
       <property name="ToolCategory.Butcher" value="0.5"/>
     </property>
     <property class="Attributes">
       <property name="EntityDamage" value="6,15"/>
-      <property name="BlockDamage" value="24,48"/>
+      <property name="BlockDamage" value="22,48"/>
       <property name="DegradationMax" value="200,1000"/>
       <property name="DegradationRate" value="1,1"/>
       <property name="DismembermentBaseChance" value="0.1,0.3"/>
@@ -1108,7 +1109,7 @@
     <property class="Action0"/>
     <property class="Attributes">
       <property name="EntityDamage" value="9,22"/>
-      <property name="BlockDamage" value="36,72"/>
+      <property name="BlockDamage" value="30,72"/>
       <property name="DegradationMax" value="500,1400"/>
     </property>
   </item>
@@ -1133,11 +1134,12 @@
       <property name="DamageBonus.head" value="2"/>
       <property name="DamageBonus.wood" value=".2"/>
       <property name="DamageBonus.earth" value=".2"/>
+      <property name="DamageBonus.organic" value=".2"/>
     </property>
     <property name="Group" value="Tools/Traps"/>
     <property class="Attributes">
       <property name="EntityDamage" value="5,15"/>
-      <property name="BlockDamage" value="30,60"/>
+      <property name="BlockDamage" value="26,64"/>
       <property name="DegradationMax" value="200,1000"/>
       <property name="DegradationRate" value="1,1"/>
       <property name="DismembermentBaseChance" value="0.05,0.15"/>
@@ -1160,7 +1162,7 @@
     <property name="Group" value="Tools/Traps"/>
     <property class="Attributes">
       <property name="EntityDamage" value="6,20"/>
-      <property name="BlockDamage" value="45,90"/>
+      <property name="BlockDamage" value="60,145"/>
       <property name="DegradationMax" value="500,1400"/>
     </property>
   </item>
@@ -1187,6 +1189,7 @@
       <property name="DamageBonus.head" value="4"/>
       <property name="DamageBonus.wood" value=".25"/>
       <property name="DamageBonus.metal" value=".5"/>
+      <property name="DamageBonus.organic" value=".7"/>
     </property>
     <property class="Attributes">
       <property name="EntityDamage" value="4,12"/>
@@ -1221,6 +1224,7 @@
       <property name="DamageBonus.head" value="4"/>
       <property name="DamageBonus.wood" value=".25"/>
       <property name="DamageBonus.metal" value=".25"/>
+      <property name="DamageBonus.organic" value=".7"/>
     </property>
     <property class="Attributes">
       <property name="EntityDamage" value="8,19"/>
@@ -1242,10 +1246,6 @@
     <property class="Action0">
       <property name="Delay" value="1.2"/>
       <property name="Stamina_usage" value="4"/>
-      <property name="DamageBonus.earth" value="2"/>
-      <property name="DamageBonus.head" value="4"/>
-      <property name="DamageBonus.wood" value=".25"/>
-      <property name="DamageBonus.metal" value=".25"/>
     </property>
     <property class="Attributes">
       <property name="EntityDamage" value="11,27"/>
@@ -1273,6 +1273,7 @@
       <property name="Sound_start" value="swoosh"/>
       <property name="Stamina_usage" value="4"/>
       <property name="DamageBonus.earth" value="2"/>
+      <property name="DamageBonus.organic" value="1"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.head" value="4"/>
     </property>
@@ -1314,8 +1315,9 @@
       <property name="DamageBonus.head" value="3"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.stone" value="0.5"/>
-      <property name="DamageBonus.wood" value="0.5"/>
+      <property name="DamageBonus.wood" value="1"/>
       <property name="DamageBonus.metal" value="2"/>
+      <property name="DamageBonus.organic" value=".5"/>
       <property name="ToolCategory.Disassemble" value="1"/>
     </property>
     <property class="Action1">
@@ -1356,6 +1358,7 @@
       <property name="DamageBonus.stone" value="1"/>
       <property name="DamageBonus.concrete" value="1"/>
       <property name="DamageBonus.metal" value="1"/>
+      <property name="DamageBonus.organic" value=".5"/>
       <property name="DamageBonus.earth" value="1"/>
     </property>
     <property class="Action1">
@@ -1512,6 +1515,7 @@
     <property name="HoldType" value="27"/>
     <property name="FuelValue" value="36"/>
     <property name="DegradationBreaksAfter" value="true"/>
+    <property name="SoundDestroy" value="wooddestroy1"/>
     <property name="CrosshairOnAim" value="true"/>
     <property name="CrosshairUpAfterShot" value="false"/>
     <property class="Action0">
@@ -1519,6 +1523,7 @@
       <property name="Delay" value="1"/>
       <property name="Magazine_size" value="1"/>
       <property name="Magazine_items" value="arrow, ironArrow, steelArrow, flamingArrow"/>
+      <property name="Rays_spread" value="0.017"/>
       <property name="Reload_time" value=".9"/>
       <property name="Bullet_icon" value="uzi"/>
       <property name="Sound_start" value="Weapons/Ranged/Bows/Bow/bow_fire"/>
@@ -1531,8 +1536,8 @@
       <property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
       <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
       <property name="Max_strain_time" value=".5"/>
-      <property name="ActionExp" value="5"/>
-      <property name="ActionExpBonusMultiplier" value="2"/>
+      <property name="ActionExp" value="3"/>
+      <property name="ActionExpBonusMultiplier" value="3"/>
     </property>
     <property class="Action1">
       <property name="Class" value="Zoom"/>
@@ -1554,11 +1559,13 @@
     <property name="RepairTools" value="wood"/>
     <property name="HoldType" value="26"/>
     <property name="FuelValue" value="70"/>
+    <property name="SoundDestroy" value="wooddestroy1"/>
     <property class="Action0">
       <property name="Class" value="Launcher"/>
       <property name="Delay" value="0.8"/>
       <property name="Magazine_size" value="1"/>
       <property name="Magazine_items" value="crossbowBolt, ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt"/>
+      <property name="Rays_spread" value="0.012"/>
       <property name="Reload_time" value="2"/>
       <property name="Bullet_icon" value="uzi"/>
       <property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire"/>
@@ -1566,6 +1573,8 @@
       <property name="Sound_end" value=""/>
       <property name="Sound_empty" value="Weapons/weapon_empty"/>
       <property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload"/>
+      <property name="ActionExp" value="3"/>
+      <property name="ActionExpBonusMultiplier" value="3"/>
     </property>
     <property class="Action1">
       <property name="Class" value="Zoom"/>
@@ -1585,7 +1594,7 @@
     <property name="Material" value="brass"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Weight" value="5"/>
+    <property name="Weight" value="1"/>
     <property name="Group" value="Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
@@ -1594,7 +1603,7 @@
     <property name="Material" value="brass"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Weight" value="5"/>
+    <property name="Weight" value="1"/>
     <property name="Group" value="Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
@@ -1603,7 +1612,7 @@
     <property name="Material" value="brass"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Weight" value="5"/>
+    <property name="Weight" value="1"/>
     <property name="Group" value="Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
@@ -1612,13 +1621,13 @@
     <property name="Material" value="brass"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Weight" value="5"/>
+    <property name="Weight" value="1"/>
     <property name="Group" value="Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="156" name="shotgunShell">
     <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
-    <property name="Material" value="metal"/>
+    <property name="Material" value="lead"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="250"/>
     <property name="DropScale" value="4"/>
@@ -1632,7 +1641,7 @@
   </item>
   <item id="157" name="shotgunSlug">
     <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
-    <property name="Material" value="metal"/>
+    <property name="Material" value="brass"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="128"/>
     <property name="Group" value="Ammo/Weapons"/>
@@ -1704,14 +1713,12 @@
       <property name="LifeTime" value="12"/>
       <property name="Buff" value="arrowCriticalBleedout"/>
       <property name="Buff_chance" value="0.5"/>
-      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.head" value="5"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.wood" value="0.1"/>
       <property name="DamageBonus.earth" value="0.1"/>
       <property name="DamageBonus.metal" value="0.1"/>
       <property name="DamageBonus.cloth" value="0.5"/>
-      <property name="ActionExp" value="10"/>
-      <property name="ActionExpBonusMultiplier" value="2"/>
     </property>
     <property name="Group" value="Ammo/Weapons,Basics"/>
     <property class="Attributes">
@@ -1738,14 +1745,13 @@
       <property name="LifeTime" value="12"/>
       <property name="Buff" value="arrowCriticalBleedout"/>
       <property name="Buff_chance" value="0.25"/>
-      <property name="DamageBonus.head" value="3"/>
+      <property name="DamageBonus.head" value="5"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.wood" value="0.1"/>
       <property name="DamageBonus.earth" value="0.1"/>
       <property name="DamageBonus.metal" value="0.1"/>
       <property name="DamageBonus.cloth" value="0.5"/>
-      <property name="ActionExp" value="5"/>
-      <property name="ActionExpBonusMultiplier" value="2"/>
+      <property name="ActionExpBonusMultiplier" value="4"/>
     </property>
     <property name="Group" value="Ammo/Weapons"/>
     <property class="Attributes">
@@ -1771,14 +1777,13 @@
       <property name="LifeTime" value="12"/>
       <property name="Buff" value="arrowCriticalBleedout"/>
       <property name="Buff_chance" value="0.35"/>
-      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.head" value="5"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.wood" value="0.1"/>
       <property name="DamageBonus.earth" value="0.1"/>
       <property name="DamageBonus.metal" value="0.1"/>
       <property name="DamageBonus.cloth" value="0.5"/>
-      <property name="ActionExp" value="3"/>
-      <property name="ActionExpBonusMultiplier" value="2"/>
+      <property name="ActionExpBonusMultiplier" value="4"/>
     </property>
     <property name="Group" value="Ammo/Weapons"/>
     <property class="Attributes">
@@ -1797,12 +1802,6 @@
     <property name="UsableUnderwater" value="false"/>
     <property name="Stacknumber" value="250"/>
     <property name="FuelValue" value="12"/>
-    <property name="DamageBonus.head" value="6"/>
-    <property name="DamageBonus.glass" value="25"/>
-    <property name="DamageBonus.wood" value="2"/>
-    <property name="DamageBonus.earth" value="0.1"/>
-    <property name="DamageBonus.metal" value="0.1"/>
-    <property name="DamageBonus.cloth" value="0.5"/>
     <property class="Action1">
       <property name="Class" value="Projectile"/>
       <property name="Explosion.ParticleIndex" value="0"/>
@@ -1810,7 +1809,13 @@
       <property name="FlyTime" value="0.15"/>
       <property name="LifeTime" value="12"/>
       <property name="ActionExp" value="30"/>
-      <property name="ActionExpBonusMultiplier" value="10"/>
+      <property name="DamageBonus.head" value="5"/>
+      <property name="DamageBonus.glass" value="25"/>
+      <property name="DamageBonus.wood" value="2"/>
+      <property name="DamageBonus.earth" value="0.1"/>
+      <property name="DamageBonus.metal" value="0.1"/>
+      <property name="DamageBonus.cloth" value="0.5"/>
+      <property name="ActionExpBonusMultiplier" value="5"/>
     </property>
     <property name="Group" value="Ammo/Weapons"/>
     <property class="Attributes">
@@ -1831,15 +1836,13 @@
     <property name="FuelValue" value="8"/>
     <property class="Action1">
       <property name="Class" value="Projectile"/>
-      <property name="DamageEntity" value="50"/>
-      <property name="DamageBlock" value="0.2"/>
       <property name="Buff" value="arrowCriticalBleedout"/>
       <property name="Buff_chance" value="0.5"/>
       <property name="Explosion.ParticleIndex" value="0"/>
       <property name="Velocity" value="75"/>
       <property name="FlyTime" value=".25"/>
       <property name="LifeTime" value="17"/>
-      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.head" value="5"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.earth" value="0"/>
       <property name="DamageBonus.metal" value="0"/>
@@ -1863,20 +1866,19 @@
     <property name="FuelValue" value="8"/>
     <property class="Action1">
       <property name="Class" value="Projectile"/>
-      <property name="DamageEntity" value="50"/>
-      <property name="DamageBlock" value="0.2"/>
       <property name="Buff" value="arrowCriticalBleedout"/>
       <property name="Buff_chance" value="0.5"/>
       <property name="Explosion.ParticleIndex" value="0"/>
       <property name="Velocity" value="80"/>
       <property name="FlyTime" value=".25"/>
       <property name="LifeTime" value="17"/>
-      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.head" value="5"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.wood" value="0.1"/>
       <property name="DamageBonus.earth" value="0"/>
       <property name="DamageBonus.metal" value="0"/>
       <property name="DamageBonus.cloth" value="0"/>
+      <property name="ActionExpBonusMultiplier" value="4"/>
     </property>
     <property class="Attributes">
       <property name="GetQualityFromWeapon" value="true"/>
@@ -1896,20 +1898,19 @@
     <property name="FuelValue" value="8"/>
     <property class="Action1">
       <property name="Class" value="Projectile"/>
-      <property name="DamageEntity" value="50"/>
-      <property name="DamageBlock" value="0.2"/>
       <property name="Buff" value="arrowCriticalBleedout"/>
       <property name="Buff_chance" value="0.5"/>
       <property name="Explosion.ParticleIndex" value="0"/>
       <property name="Velocity" value="85"/>
       <property name="FlyTime" value=".25"/>
       <property name="LifeTime" value="17"/>
-      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.head" value="5"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.wood" value="0.1"/>
       <property name="DamageBonus.earth" value="0"/>
       <property name="DamageBonus.metal" value="0"/>
       <property name="DamageBonus.cloth" value="0"/>
+      <property name="ActionExpBonusMultiplier" value="4"/>
     </property>
     <property class="Attributes">
       <property name="GetQualityFromWeapon" value="true"/>
@@ -1929,15 +1930,13 @@
     <property name="FuelValue" value="8"/>
     <property class="Action1">
       <property name="Class" value="Projectile"/>
-      <property name="DamageEntity" value="50"/>
-      <property name="DamageBlock" value="0.2"/>
       <property name="Buff" value="arrowCriticalBleedout"/>
       <property name="Buff_chance" value="0.5"/>
       <property name="Explosion.ParticleIndex" value="0"/>
       <property name="Velocity" value="65"/>
       <property name="FlyTime" value=".25"/>
       <property name="LifeTime" value="17"/>
-      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.head" value="5"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.wood" value="0.1"/>
       <property name="DamageBonus.earth" value="0"/>
@@ -1948,6 +1947,7 @@
       <property name="Explosion.ParticleIndex" value="1"/>
       <property name="Explosion.RadiusBlocks" value="4"/>
       <property name="Explosion.RadiusEntities" value="5"/>
+      <property name="ActionExpBonusMultiplier" value="5"/>
     </property>
     <property class="Attributes">
       <property name="GetQualityFromWeapon" value="true"/>
@@ -1972,7 +1972,7 @@
     <property name="DropScale" value="2"/>
     <property class="Action0">
       <property name="Class" value="ThrowAway"/>
-      <property name="Delay" value="0.8"/>
+      <property name="Delay" value="1.2"/>
       <property name="Throw_strength_default" value="0.8"/>
       <property name="Throw_strength_max" value="2.5"/>
       <property name="Max_strain_time" value="2.1"/>
@@ -1980,7 +1980,7 @@
     </property>
     <property class="Action1">
       <property name="Class" value="Activate"/>
-      <property name="Delay" value="4"/>
+      <property name="Delay" value="1"/>
     </property>
     <property name="ThrowableDecoy" value="true"/>
     <property name="Group" value="Ammo/Weapons"/>
@@ -2001,7 +2001,7 @@
     <property name="DropScale" value="2"/>
     <property class="Action0">
       <property name="Class" value="ThrowAway"/>
-      <property name="Delay" value="0.8"/>
+      <property name="Delay" value="1.2"/>
       <property name="Throw_strength_default" value="0.8"/>
       <property name="Throw_strength_max" value="2.5"/>
       <property name="Max_strain_time" value="2.1"/>
@@ -2009,7 +2009,7 @@
     </property>
     <property class="Action1">
       <property name="Class" value="Activate"/>
-      <property name="Delay" value="4"/>
+      <property name="Delay" value="1"/>
     </property>
     <property name="ThrowableDecoy" value="true"/>
     <property name="Group" value="Ammo/Weapons"/>
@@ -2029,7 +2029,7 @@
     <property name="DropScale" value="2"/>
     <property class="Action0">
       <property name="Class" value="ThrowAway"/>
-      <property name="Delay" value="0.8"/>
+      <property name="Delay" value="1.2"/>
       <property name="Throw_strength_default" value="0.8"/>
       <property name="Throw_strength_max" value="2.5"/>
       <property name="Max_strain_time" value="2.1"/>
@@ -2037,7 +2037,7 @@
     </property>
     <property class="Action1">
       <property name="Class" value="Activate"/>
-      <property name="Delay" value="4"/>
+      <property name="Delay" value="1"/>
     </property>
     <property name="ThrowableDecoy" value="true"/>
     <property name="Group" value="Ammo/Weapons"/>
@@ -2048,11 +2048,11 @@
     <property name="Material" value="stone"/>
     <property name="HoldType" value="40"/>
     <property name="Stacknumber" value="1000"/>
-    <property name="RepairAmount" value="200"/>
+    <property name="RepairAmount" value="300"/>
     <property name="Weight" value="5"/>
     <property class="Action0">
       <property name="Class" value="ThrowAway"/>
-      <property name="Delay" value="0.8"/>
+      <property name="Delay" value="1.2"/>
       <property name="Throw_strength_default" value="0.8"/>
       <property name="Throw_strength_max" value="2.5"/>
       <property name="Max_strain_time" value="2.1"/>
@@ -2071,7 +2071,7 @@
     <property name="Group" value="Resources"/>
     <property class="Action0">
       <property name="Class" value="ThrowAway"/>
-      <property name="Delay" value="0.8"/>
+      <property name="Delay" value="1.2"/>
       <property name="Throw_strength_default" value="0.8"/>
       <property name="Throw_strength_max" value="2.5"/>
       <property name="Max_strain_time" value="2.1"/>
@@ -3164,9 +3164,10 @@
     <property name="EquipSlot" value="Legs"/>
     <property class="UMA">
       <property name="Mesh" value="armor_hazmat_legs"/>
+      <property name="Mask1" value="legs" param1="middle"/>
       <property name="Overlay0" value="armor_hazmat_pants"/>
-      <property name="Layer" value="3"/>
-      <property name="UISlot" value="LegArmor"/>
+      <property name="Layer" value="1"/>
+      <property name="UISlot" value="Pants"/>
     </property>
   </item>
   <item id="399" name="hazmatShirt">
@@ -3176,8 +3177,8 @@
     <property class="UMA">
       <property name="Mesh" value="armor_hazmat_chest"/>
       <property name="Overlay0" value="armor_hazmat_chest"/>
-      <property name="Layer" value="2"/>
-      <property name="UISlot" value="ChestArmor"/>
+      <property name="Layer" value="1"/>
+      <property name="UISlot" value="Shirt"/>
     </property>
   </item>
   <item id="400" name="hazmatGloves">
@@ -3198,8 +3199,9 @@
     <property class="UMA">
       <property name="Mesh" value="armor_hazmat_head"/>
       <property name="Overlay0" value="armor_hazmat_hood"/>
-      <property name="Layer" value="2"/>
+      <property name="Layer" value="0"/>
       <property name="UISlot" value="Headgear,xFace,xEyewear"/>
+      <property name="Mask0" value="Face" param1="base"/>
       <property name="ShowAltHair" value="true"/>
     </property>
   </item>
@@ -4087,6 +4089,149 @@
       <property name="UISlot" value="Backpack"/>
     </property>
   </item>
+  <item id="531" name="sweatshirt">
+    <property name="Insulation" value="15"/>
+    <property name="Waterproof" value="0.1"/>
+    <property name="Material" value="cloth"/>
+    <property name="RepairTools" value="cloth"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="FuelValue" value="3"/>
+    <property name="Weight" value="5"/>
+    <property name="EquipSlot" value="Chest"/>
+    <property name="HoldType" value="45"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.08,0.2"/>
+      <property name="PunctureProtection" value="0.08,0.2"/>
+      <property name="FireProtection" value="0.12,0.2"/>
+      <property name="RadiationProtection" value="0.06,0.1"/>
+      <property name="DegradationMax" value="80,200"/>
+    </property>
+    <property class="UMA">
+      <property name="Mesh" value="sweatshirt"/>
+      <property name="Overlay0" value="sweatshirt"/>
+      <property name="Layer" value="0"/>
+      <property name="UISlot" value="Shirt"/>
+    </property>
+    <property name="DescriptionKey" value="shirtClothesGroupDesc"/>
+    <property name="Group" value="Clothing"/>
+    <property name="ActionSkillGroup" value=" "/>
+    <property name="CraftingSkillGroup" value="Tailoring"/>
+  </item>
+  <item id="532" name="sweatshirtRed">
+    <property name="Extends" value="sweatshirt"/>
+    <property name="CustomIcon" value="sweatshirt"/>
+    <property name="CustomIconTint" value="173,0,0"/>
+    <property class="UMA">
+      <property name="Overlay0Tint" value="173,0,0"/>
+    </property>
+  </item>
+  <item id="533" name="sweatshirtBrown">
+    <property name="Extends" value="sweatshirt"/>
+    <property name="CustomIcon" value="sweatshirt"/>
+    <property name="CustomIconTint" value="132,105,84"/>
+    <property class="UMA">
+      <property name="Overlay0Tint" value="132,105,84"/>
+    </property>
+  </item>
+  <item id="534" name="sweatshirtGreen">
+    <property name="Extends" value="sweatshirt"/>
+    <property name="CustomIcon" value="sweatshirt"/>
+    <property name="CustomIconTint" value="51,92,65"/>
+    <property class="UMA">
+      <property name="Overlay0Tint" value="51,92,65"/>
+    </property>
+  </item>
+  <item id="535" name="sweatshirtBlue">
+    <property name="Extends" value="sweatshirt"/>
+    <property name="CustomIcon" value="sweatshirt"/>
+    <property name="CustomIconTint" value="110,173,255"/>
+    <property class="UMA">
+      <property name="Overlay0Tint" value="110,173,255"/>
+    </property>
+  </item>
+  <item id="536" name="sweatshirtBlack">
+    <property name="Extends" value="sweatshirt"/>
+    <property name="CustomIcon" value="sweatshirt"/>
+    <property name="CustomIconTint" value="87,87,87"/>
+    <property class="UMA">
+      <property name="Overlay0Tint" value="87,87,87"/>
+    </property>
+  </item>
+  <item id="537" name="tshirtWhite">
+    <property name="Insulation" value="2"/>
+    <property name="Waterproof" value="0.1"/>
+    <property name="Material" value="cloth"/>
+    <property name="RepairTools" value="cloth"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="FuelValue" value="2"/>
+    <property name="Weight" value="5"/>
+    <property name="EquipSlot" value="Chest"/>
+    <property name="HoldType" value="45"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.065,0.13"/>
+      <property name="PunctureProtection" value="0.065,0.13"/>
+      <property name="FireProtection" value="0.12,0.2"/>
+      <property name="RadiationProtection" value="0.06,0.1"/>
+      <property name="DegradationMax" value="72,180"/>
+    </property>
+    <property class="UMA">
+      <property name="Mesh" value="base_chest"/>
+      <property name="Overlay0" value="torso"/>
+      <property name="Overlay0Tint" value="skin"/>
+      <property name="Overlay1" value="tshirt"/>
+      <property name="Overlay1Tint" value="255,255,255"/>
+      <property name="Layer" value="0"/>
+      <property name="UISlot" value="Shirt"/>
+    </property>
+    <property name="DescriptionKey" value="tshirtClothesGroupDesc"/>
+    <property name="Group" value="Clothing"/>
+    <property name="ActionSkillGroup" value=" "/>
+    <property name="CraftingSkillGroup" value="Tailoring"/>
+  </item>
+  <item id="538" name="tshirtRed">
+    <property name="Extends" value="tshirtWhite"/>
+    <property name="CustomIcon" value="tshirtWhite"/>
+    <property name="CustomIconTint" value="173,0,0"/>
+    <property class="UMA">
+      <property name="Overlay1Tint" value="173,0,0"/>
+    </property>
+  </item>
+  <item id="539" name="tshirtBrown">
+    <property name="Extends" value="tshirtWhite"/>
+    <property name="CustomIcon" value="tshirtWhite"/>
+    <property name="CustomIconTint" value="132,105,84"/>
+    <property class="UMA">
+      <property name="Overlay1Tint" value="132,105,84"/>
+    </property>
+  </item>
+  <item id="540" name="tshirtGreen">
+    <property name="Extends" value="tshirtWhite"/>
+    <property name="CustomIcon" value="tshirtWhite"/>
+    <property name="CustomIconTint" value="51,92,65"/>
+    <property class="UMA">
+      <property name="Overlay1Tint" value="51,92,65"/>
+    </property>
+  </item>
+  <item id="541" name="tshirtBlue">
+    <property name="Extends" value="tshirtWhite"/>
+    <property name="CustomIcon" value="tshirtWhite"/>
+    <property name="CustomIconTint" value="110,173,255"/>
+    <property class="UMA">
+      <property name="Overlay1Tint" value="110,173,255"/>
+    </property>
+  </item>
+  <item id="542" name="tshirtBlack">
+    <property name="Extends" value="tshirtWhite"/>
+    <property name="CustomIcon" value="tshirtWhite"/>
+    <property name="CustomIconTint" value="87,87,87"/>
+    <property class="UMA">
+      <property name="Overlay1Tint" value="87,87,87"/>
+    </property>
+  </item>
   <item id="650" name="splint">
     <property name="Meshfile" value="Items/Misc/sackPrefab"/>
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -4752,6 +4897,7 @@
       <property name="Buff_chance" value="0.5"/>
       <property name="Sound_start" value="UseActions/player_eating"/>
     </property>
+    <property name="CraftingIngredientTime" value="6"/>
     <property name="Group" value="Food/Cooking"/>
   </item>
   <item id="737" name="charredMeat">
@@ -5648,7 +5794,7 @@
     <property name="Weight" value="1"/>
     <property name="Material" value="plants"/>
     <property name="RepairTime" value="1"/>
-    <property name="RepairAmount" value="10"/>
+    <property name="RepairAmount" value="30"/>
     <property name="HoldType" value="16"/>
     <property name="Stacknumber" value="1000"/>
     <property name="FuelValue" value="1"/>
@@ -5668,7 +5814,7 @@
     <property name="Stacknumber" value="1000"/>
     <property name="FuelValue" value="10"/>
     <property name="Group" value="Resources,Basics"/>
-    <property name="RepairAmount" value="10"/>
+    <property name="RepairAmount" value="100"/>
     <property name="LootExpValue" value="1"/>
     <property name="DescriptionKey" value="woodDesc"/>
     <property name="CraftingIngredientTime" value="0.5"/>
@@ -5691,7 +5837,7 @@
     <property name="Weight" value="5"/>
     <property name="Group" value="Resources"/>
     <property name="RepairTime" value="0.5"/>
-    <property name="RepairAmount" value="50"/>
+    <property name="RepairAmount" value="100"/>
   </item>
   <item id="1306" name="forgedIron">
     <property name="Material" value="metal"/>
@@ -5702,7 +5848,7 @@
     <property name="CraftingIngredientExp" value="10"/>
     <property name="CraftingIngredientTime" value="10"/>
     <property name="RepairTime" value="0.5"/>
-    <property name="RepairAmount" value="200"/>
+    <property name="RepairAmount" value="270"/>
     <property name="Group" value="Resources"/>
   </item>
   <item id="1307" name="shortMetalPipe">
@@ -5721,7 +5867,7 @@
     <property name="CraftingIngredientExp" value="15"/>
     <property name="CraftingIngredientTime" value="15"/>
     <property name="RepairTime" value="1"/>
-    <property name="RepairAmount" value="200"/>
+    <property name="RepairAmount" value="400"/>
   </item>
   <item id="1311" name="oilShale">
     <property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -5747,11 +5893,11 @@
   <item id="1313" name="leather">
     <property name="Meshfile" value="Items/Crafting/leather"/>
     <property name="Material" value="leather"/>
-    <property name="RepairAmount" value="20"/>
+    <property name="RepairAmount" value="80"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="250"/>
     <property name="FuelValue" value="5"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Clothing"/>
     <property name="CraftingIngredientTime" value="2"/>
     <property name="Weight" value="5"/>
     <property name="CraftingSkillGroup" value="Leatherworking"/>
@@ -5812,10 +5958,10 @@
     <property name="Material" value="cloth"/>
     <property name="HoldType" value="14"/>
     <property name="Stacknumber" value="250"/>
-    <property name="RepairAmount" value="25"/>
+    <property name="RepairAmount" value="50"/>
     <property name="FuelValue" value="1"/>
     <property name="Weight" value="5"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Clothing"/>
   </item>
   <item id="1328" name="paper">
     <property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -5835,11 +5981,10 @@
     <property name="CraftingIngredientExp" value="10"/>
     <property name="CraftingIngredientTime" value="10"/>
     <property name="RepairTime" value="0.6"/>
-    <property name="RepairAmount" value="200"/>
-    <property name="FuelValue" value="2"/>
+    <property name="RepairAmount" value="120"/>
     <property name="Weight" value="1"/>
     <property name="CraftingSkillGroup" value="Science"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Clothing"/>
   </item>
   <item id="1340" name="feather">
     <property name="Meshfile" value="Items/Crafting/featherPrefab"/>
@@ -5855,7 +6000,7 @@
     <property name="Material" value="metal"/>
     <property name="HoldType" value="45"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Weapon Smithing"/>
   </item>
   <item id="1342" name="steelArrowHead">
@@ -5864,7 +6009,7 @@
     <property name="Material" value="metal"/>
     <property name="HoldType" value="45"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Weapon Smithing"/>
   </item>
   <item id="1345" name="coal">
@@ -5891,7 +6036,7 @@
     <property name="Material" value="dirt"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons,Tools/Traps"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="1348" name="buckshot">
@@ -5900,7 +6045,7 @@
     <property name="Material" value="lead"/>
     <property name="HoldType" value="45"/>
     <property name="Stacknumber" value="250"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="1349" name="bulletCasing">
@@ -5908,7 +6053,7 @@
     <property name="Material" value="brass"/>
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="1350" name="bulletTip">
@@ -5917,7 +6062,7 @@
     <property name="Material" value="lead"/>
     <property name="HoldType" value="45"/>
     <property name="Stacknumber" value="500"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="1353" name="nail">
@@ -5934,7 +6079,7 @@
       <property name="Velocity" value="10"/>
       <property name="FlyTime" value="1"/>
       <property name="LifeTime" value="1"/>
-      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.head" value="5"/>
       <property name="DamageBonus.glass" value="25"/>
       <property name="DamageBonus.wood" value="0.1"/>
       <property name="DamageBonus.earth" value="0"/>
@@ -5950,7 +6095,7 @@
     <property name="HoldType" value="45"/>
     <property name="Stacknumber" value="500"/>
     <property name="Weight" value="50"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="1355" name="rocketCasing">
@@ -5960,7 +6105,7 @@
     <property name="HoldType" value="45"/>
     <property name="Stacknumber" value="500"/>
     <property name="Weight" value="50"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="1359" name="repairKit">
@@ -5971,7 +6116,7 @@
     <property name="Stacknumber" value="50"/>
     <property name="RepairTime" value="1"/>
     <property name="RepairAmount" value="2000"/>
-    <property name="Group" value="Resources"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="1360" name="oil">

@@ -39,7 +39,7 @@
         <texture name="male_worn_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -168,7 +168,7 @@
         <texture name="female_worn_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="1" blink_max_delay="1" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="1" blink_max_delay="1" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -303,7 +303,7 @@
         <texture name="male_worn_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -430,7 +430,7 @@
         <texture name="female_worn_boots" color="80,80,80"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -562,7 +562,7 @@
         <texture name="male_worn_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -697,7 +697,7 @@
         <texture name="unisex_armor_kevlar_boots" color="80,80,80"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -816,20 +816,21 @@
       <part slot="head" layer="outer" mesh="unisex_aviator_goggles">
         <texture name="unisex_aviator_goggles" color="255,255,255"/>
       </part>
-      <part slot="chest" layer="inner" mesh="male_armor_hide_chest">
-        <texture name="male_armor_hide_chest" color="255,255,255"/>
+      <part slot="chest" layer="base" mesh="male_base_chest">
+        <texture name="male_torso" color="200,175,175"/>
+        <texture name="male_tshirt" color="255,200,0"/>
       </part>
       <part slot="hands" layer="inner" mesh="armor_scrap_metal_hands">
         <texture name="scrap_metal_armor" color="255,255,255"/>
       </part>
-      <part slot="legs" layer="base" mesh="male_clothes_denim_pants">
-        <texture name="male_pants_01" color="200,0,0"/>
+      <part slot="legs" layer="base" mesh="male_clothes_army_pants">
+        <texture name="unisex_clothes_army_pants" color="255,255,255"/>
       </part>
       <part slot="feet" layer="base" mesh="male_armor_leather_feet">
         <texture name="armor_leather_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -919,17 +920,18 @@
   <archetype name="Grace" male="false">
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_asian_face">
-        <texture name="female_head" color="255,255,255"/>
+        <texture name="female_head_asian" color="255,255,255"/>
+        <texture name="female_hair_overlay" color="30,25,23"/>
       </part>
       <part slot="head" layer="outer" mesh="female_asian_eyelashes">
         <texture name="female_eyelashes" color="255,255,255"/>
       </part>
       <part slot="head" layer="inner" mesh="female_shaggy_hair">
-        <texture name="female_shaggy_hair" color="255,30,30"/>
+        <texture name="female_shaggy_hair" color="35,27,27"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_asian_eyes">
         <texture name="unisex_eyes" color="255,255,255"/>
-        <texture name="unisex_iris" color="90,60,60"/>
+        <texture name="unisex_iris_large" color="60,30,30"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
         <texture name="female_hands" color="255,255,255"/>
@@ -948,9 +950,6 @@
       </part>
     </base_mesh_parts>
     <preview_mesh_parts>
-      <part slot="head" layer="outer" mesh="unisex_gear_shades">
-        <texture name="unisex_gear_shades" color="255,255,255"/>
-      </part>
       <part slot="chest" layer="base" mesh="female_shirt">
         <texture name="unisex_shirt" color="50,50,50"/>
       </part>
@@ -964,7 +963,7 @@
         <texture name="female_armor_hazmat_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -1015,9 +1014,9 @@
       <gene name="feetSize" value="0.58"/>
       <gene name="legSeparation" value="0.5"/>
       <gene name="upperMuscle" value="0.62"/>
-      <gene name="lowerMuscle" value="0.64"/>
+      <gene name="lowerMuscle" value="0.16"/>
       <gene name="upperWeight" value="0.63"/>
-      <gene name="lowerWeight" value="0.7"/>
+      <gene name="lowerWeight" value="0.625"/>
       <gene name="legsSize" value="0.565"/>
       <gene name="belly" value="0"/>
       <gene name="waist" value="0.24"/>
@@ -1029,12 +1028,12 @@
       <gene name="noseCurve" value="0.5"/>
       <gene name="noseWidth" value="0.36"/>
       <gene name="noseInclination" value="0.35"/>
-      <gene name="nosePosition" value="0.475"/>
+      <gene name="nosePosition" value="0.47"/>
       <gene name="nosePronounced" value="0.485"/>
       <gene name="noseFlatten" value="0.16"/>
-      <gene name="chinSize" value="0.66"/>
+      <gene name="chinSize" value="0.845"/>
       <gene name="chinPronounced" value="0"/>
-      <gene name="chinPosition" value="0.5"/>
+      <gene name="chinPosition" value="0.52"/>
       <gene name="mandibleSize" value="0.38"/>
       <gene name="jawsSize" value="0.075"/>
       <gene name="jawsPosition" value="0.505"/>
@@ -1047,7 +1046,7 @@
       <gene name="lipsSize" value="0.5"/>
       <gene name="mouthSize" value="0.5"/>
       <gene name="eyeRotation" value="0.5"/>
-      <gene name="eyeSize" value="0.5"/>
+      <gene name="eyeSize" value="0.64"/>
       <gene name="breastSize" value="0.33"/>
     </dna>
   </archetype>
@@ -1096,7 +1095,7 @@
         <texture name="armor_leather_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -1187,16 +1186,17 @@
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_base_face">
         <texture name="female_head" color="200,200,200"/>
+        <texture name="female_hair_overlay" color="60,25,23"/>
       </part>
       <part slot="head" layer="outer" mesh="female_base_eyelashes">
         <texture name="female_eyelashes" color="255,255,255"/>
       </part>
       <part slot="head" layer="inner" mesh="female_shaggy_hair">
-        <texture name="female_shaggy_hair" color="100,50,50"/>
+        <texture name="female_shaggy_hair" color="120,35,3"/>
       </part>
       <part slot="eyes" layer="base" mesh="female_base_eyes">
         <texture name="unisex_eyes" color="255,255,255"/>
-        <texture name="unisex_iris" color="0,180,180"/>
+        <texture name="unisex_iris" color="70,120,70"/>
       </part>
       <part slot="hands" layer="base" mesh="female_base_hands">
         <texture name="female_hands" color="200,200,200"/>
@@ -1228,7 +1228,7 @@
         <texture name="unisex_armor_kevlar_boots" color="80,80,80"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -1360,7 +1360,7 @@
         <texture name="armor_leather_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -1502,7 +1502,7 @@
         <texture name="female_armor_cloth_feet" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -1637,7 +1637,7 @@
         <texture name="armor_scrap_metal_feet" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -1772,7 +1772,7 @@
         <texture name="unisex_armor_kevlar_boots" color="80,80,80"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -1907,7 +1907,7 @@
         <texture name="female_armor_iron_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -2036,7 +2036,7 @@
         <texture name="unisex_armor_hide_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -2174,7 +2174,7 @@
         <texture name="male_worn_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>
@@ -2313,7 +2313,7 @@
         <texture name="armor_leather_boots" color="255,255,255"/>
       </part>
     </preview_mesh_parts>
-    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
+    <expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
       <gene name="neckUp_Down" value="0"/>
       <gene name="neckLeft_Right" value="0"/>
       <gene name="neckTiltLeft_Right" value="0"/>

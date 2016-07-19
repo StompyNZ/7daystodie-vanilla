@@ -23,7 +23,7 @@
     <modify id="0" stat="stamina" amount="-1" rate="1"/>
     <modify id="0" stat="speedmodifier" setValue="0.70"/>
   </buff>
-  <buff id="Hangover" mutex="AlcoholPoisoning" duration="1200t" name_key="hangover" type="staminadown" description_key="hangoverDesc" tooltip_key="hangoverTooltip" icon="ui_game_symbol_food_poisoning">
+  <buff id="Hangover" mutex="AlcoholPoisoning" duration="1500" name_key="hangover" type="staminadown" description_key="hangoverDesc" tooltip_key="hangoverTooltip" icon="ui_game_symbol_food_poisoning">
     <modify id="0" stat="stamina" amount="-1" rate="1"/>
   </buff>
   <buff id="AlcoholPoisoning" buffif="beers greater 14" debuffif="beers less 9" ondebuff="SickDrunk" name_key="alcoholPoisoning" type="bleeding" description_key="alcoholPoisoningDesc" tooltip_key="alcoholPoisoningTooltip" actions="increment(@wellness, -1, 100t, 0, 0);debuff(SickDrunk);debuff(Hangover)" icon="ui_game_symbol_food_poisoning" stack="extend">
@@ -60,17 +60,17 @@
   <buff id="foodPoisoning" duration="30" name_key="foodPoisoning" type="sickness" actions="increment(@wellness, -.5, 15, 0, 0)" description_key="foodPoisoningDesc" tooltip_key="foodPoisoningTooltip" icon="ui_game_symbol_food_poisoning">
     <modify id="0" stat="stamina" amount="-10" rate="1"/>
   </buff>
-  <buff id="steroids" duration="2400t" actions="addimmunity(sickness)" name_key="steroids" description_key="steroidsDesc" tooltip_key="steroidsTooltip" icon="ui_game_symbol_pills"/>
-  <buff id="cured" duration="2400t" name_key="cured" description_key="curedDesc" tooltip_key="curedTooltip" icon="ui_game_symbol_pills" stack="reset"/>
+  <buff id="steroids" duration="3000" actions="addimmunity(sickness)" name_key="steroids" description_key="steroidsDesc" tooltip_key="steroidsTooltip" icon="ui_game_symbol_pills"/>
+  <buff id="cured" duration="3000" name_key="cured" description_key="curedDesc" tooltip_key="curedTooltip" icon="ui_game_symbol_pills" stack="reset"/>
   <buff id="smelly" duration="30" name_key="smelly" smell="largeSmell" description_key="smellyDesc" tooltip_key="smellyTooltip" icon="ui_game_symbol_dysentery"/>
-  <buff id="infection" name_key="infection" type="sickness" mutex="cured,infection1,infection2,infection3,infection4" onexpired="infection1" duration="7200t" description_key="infectionDesc" tooltip_key="infectionTooltip" icon="ui_game_symbol_infection" cures="foodHoney,antibiotics,herbalAntibiotics"/>
-  <buff id="infection1" name_key="infection1" type="sickness" onexpired="infection2" duration="7200t" description_key="infection1Desc" tooltip_key="infection1Tooltip" icon="ui_game_symbol_infection" cures="antibiotics">
+  <buff id="infection" name_key="infection" type="sickness" mutex="cured,infection1,infection2,infection3,infection4" onexpired="infection1" duration="9000" description_key="infectionDesc" tooltip_key="infectionTooltip" icon="ui_game_symbol_infection" cures="foodHoney,antibiotics,herbalAntibiotics"/>
+  <buff id="infection1" name_key="infection1" type="sickness" onexpired="infection2" duration="9000" description_key="infection1Desc" tooltip_key="infection1Tooltip" icon="ui_game_symbol_infection" cures="antibiotics">
     <modify id="0" stat="stamina" amount="-0.3" rate="1"/>
   </buff>
-  <buff id="infection2" name_key="infection2" type="sickness" duration="7200t" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0)" onexpired="infection3" description_key="infection2Desc" tooltip_key="infection2Tooltip" icon="ui_game_symbol_infection" cures="antibiotics">
+  <buff id="infection2" name_key="infection2" type="sickness" duration="9000" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0)" onexpired="infection3" description_key="infection2Desc" tooltip_key="infection2Tooltip" icon="ui_game_symbol_infection" cures="antibiotics">
     <modify id="0" stat="stamina" amount="-1" rate="1"/>
   </buff>
-  <buff id="infection3" name_key="infection3" type="sickness" duration="2400t" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0)" onexpired="infection4" description_key="infection3Desc" tooltip_key="infection3Tooltip" icon="ui_game_symbol_infection" cures="antibiotics">
+  <buff id="infection3" name_key="infection3" type="sickness" duration="3000" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0)" onexpired="infection4" description_key="infection3Desc" tooltip_key="infection3Tooltip" icon="ui_game_symbol_infection" cures="antibiotics">
     <modify id="0" stat="stamina" amount="-2" rate="1"/>
     <modify id="1" stat="health" amount="-1" rate="3"/>
   </buff>
@@ -88,7 +88,7 @@
     <modify id="0" stat="stamina" amount="-15" rate="1"/>
     <modify id="1" stat="health" amount="-15" rate="1"/>
   </buff>
-  <buff id="brokenLeg" duration="7200t" name_key="brokenLeg" description_key="brokenLegDesc" tooltip_key="brokenLegTooltip" stack="reset" type="speedmodifier" actions="debuff(firstAid);debuff(splint);debuff(sprainedLeg)" icon="ui_game_symbol_brokenbone" cures="splint">
+  <buff id="brokenLeg" duration="9000" name_key="brokenLeg" description_key="brokenLegDesc" tooltip_key="brokenLegTooltip" stack="reset" type="speedmodifier" actions="debuff(firstAid);debuff(splint);debuff(sprainedLeg)" icon="ui_game_symbol_brokenbone" cures="splint">
     <modify id="0" stat="speedmodifier" mulValue="0.6"/>
   </buff>
   <buff id="splint" overrides="brokenLeg,sprainedLeg" name_key="splintedLeg" type="speedmodifier" overrideicon="true" description_key="splintedLegDesc" tooltip_key="splintedLegTooltip" icon="ui_game_symbol_splint">
@@ -122,14 +122,13 @@
     <modify id="0" stat="stamina" amount="-3" rate="1"/>
     <modify id="1" stat="health" amount="-1" rate="1"/>
   </buff>
-  <buff id="cannotBreath" stack="discard" duration="14" name_key="cannotBreathe" description_key="cannotBreatheDesc" tooltip_key="cannotBreatheTooltip" actions="debuff(freshAir)" mutex="cannotBreatheWrn,drowning" onexpired="cannotBreatheWrn" icon="ui_game_symbol_oxygen"/>
-  <buff id="cannotBreatheWrn" stack="discard" duration="6" name_key="cannotBreatheWrn" description_key="cannotBreatheWrnDesc" tooltip_key="cannotBreatheWrnTooltip" mutex="drowning" onexpired="drowning" icon="ui_game_symbol_oxygen"/>
+  <buff id="cannotBreath" notificationClass="UnderwaterBuffNotification" stack="discard" duration="20" name_key="cannotBreathe" description_key="cannotBreatheDesc" tooltip_key="cannotBreatheTooltip" actions="debuff(freshAir)" mutex="drowning" onexpired="drowning" icon="ui_game_symbol_oxygen"/>
   <buff id="drowning" stack="discard" duration="0" name_key="drowning" description_key="drowningDesc" tooltip_key="drowningTooltip" actions="damage(0,4,0,0)" icon="ui_game_symbol_oxygen" type="drowning">
     <modify id="1" stat="health" amount="-14" rate="4"/>
   </buff>
   <buff id="freshAir" stack="discard" duration="1" actions="debuff(cannotBreath);debuff(cannotBreatheWrn);debuff(drowning)"/>
   <buff id="smell" duration="0" name_key="smell" description_key="smellDesc" tooltip_key="smellTooltip" icon="ui_game_symbol_smell"/>
-  <buff id="wellnessSmallGain" duration="800t" name_key="wellnessSmallGain" description_key="wellnessSmallGainDesc" tooltip_key="wellnessSmallGainTooltip" stack="discard" actions="increment(@wellness, 1, 0, 0, 1)" icon="ui_game_symbol_smell"/>
+  <buff id="wellnessSmallGain" duration="1000" name_key="wellnessSmallGain" description_key="wellnessSmallGainDesc" tooltip_key="wellnessSmallGainTooltip" stack="discard" actions="increment(@wellness, 1, 0, 0, 1)" icon="ui_game_symbol_smell"/>
   <buff id="fullBuff" mutex="bleeding" buffif="food > 0.5" debuffif="food lequal 0.5" name_key="fullBuff" description_key="fullBuffDesc" tooltip_key="fullBuffTooltip" icon="ui_game_symbol_natural_healing">
     <modify id="0" stat="health" amount="1" rate="60"/>
   </buff>

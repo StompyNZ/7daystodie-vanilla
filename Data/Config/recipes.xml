@@ -247,11 +247,11 @@
     <ingredient name="cloth" count="2"/>
   </recipe>
   <recipe name="barbedFence" count="1" scrapable="True">
-    <ingredient name="forgedIron" count="1"/>
-    <ingredient name="wood" count="2"/>
+    <ingredient name="forgedIron" count="2"/>
+    <ingredient name="wood" count="5"/>
   </recipe>
   <recipe name="barbedWireSheet" count="1" scrapable="False">
-    <ingredient name="forgedIron" count="5"/>
+    <ingredient name="forgedIron" count="2"/>
   </recipe>
   <recipe name="barnWoodBlock" count="1" scrapable="False">
     <ingredient name="wood" count="20"/>
@@ -369,8 +369,7 @@
     <ingredient name="fertileDirt" count="1"/>
   </recipe>
   <recipe name="cabinFlagstoneRamp" count="1" scrapable="False">
-    <ingredient name="rockSmall" count="6"/>
-    <ingredient name="cement" count="1"/>
+    <ingredient name="cobblestones" count="3"/>
   </recipe>
   <recipe name="camoNetBlock" count="1" scrapable="False">
     <ingredient name="cloth" count="10"/>
@@ -687,6 +686,9 @@
     <ingredient name="wood" count="1"/>
     <ingredient name="feather" count="1"/>
   </recipe>
+  <recipe name="destroyedStone" count="1" craft_time="2" scrapable="False">
+    <ingredient name="rockSmall" count="18"/>
+  </recipe>
   <recipe name="ductTape" count="1" scrapable="False">
     <ingredient name="glue" count="1"/>
     <ingredient name="cloth" count="1"/>
@@ -730,12 +732,10 @@
     <ingredient name="ductTape" count="1"/>
   </recipe>
   <recipe name="flagstoneBlock" count="1" scrapable="False">
-    <ingredient name="rockSmall" count="6"/>
-    <ingredient name="cement" count="1"/>
+    <ingredient name="cobblestones" count="3"/>
   </recipe>
   <recipe name="flagstoneStairs25" count="1" scrapable="False">
-    <ingredient name="rockSmall" count="6"/>
-    <ingredient name="cement" count="1"/>
+    <ingredient name="cobblestones" count="3"/>
   </recipe>
   <recipe name="flamingArrow" count="1" scrapable="False">
     <ingredient name="gunPowder" count="2"/>
