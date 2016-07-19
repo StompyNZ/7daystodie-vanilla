@@ -446,7 +446,6 @@
     <item name="firstAidKitSchematic"/>
     <item name="flamingArrowSchematic"/>
     <item name="gasCanSchematic"/>
-    <item name="handleBarsSchematic"/>
     <item name="ironBootsSchematic"/>
     <item name="ironChestArmorSchematic"/>
     <item name="ironGlovesSchematic"/>
@@ -1018,6 +1017,7 @@
   </lootcontainer>
   <lootcontainer id="57" count="1,5" size="4,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
     <item group="tools"/>
+    <item name="dynamite" count="1,4" prob="0.3"/>
   </lootcontainer>
   <lootcontainer id="58" count="0,3" size="4,4" sound_open="UseActions/open_shopping_basket" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
     <item group="cupboard"/>
@@ -1075,5 +1075,8 @@
     <item group="airdropMedicine"/>
     <item group="herbalRecipes"/>
     <item group="questChallenge"/>
+    <item name="calipers" prob="0.075"/>
+    <item name="toolAndDieSet" prob="0.075"/>
+    <item name="bloodDrawKit" prob="0.03"/>
   </lootcontainer>
 </lootcontainers>

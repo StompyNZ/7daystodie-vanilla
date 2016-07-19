@@ -43,34 +43,34 @@
     <wildcard_forge_category/>
   </recipe>
   <recipe name="10mmBullet" count="1" scrapable="True">
-    <ingredient name="bulletTip" count="1"/>
-    <ingredient name="gunPowder" count="2"/>
     <ingredient name="bulletCasing" count="1"/>
+    <ingredient name="gunPowder" count="2"/>
+    <ingredient name="bulletTip" count="1"/>
   </recipe>
   <recipe name="44MagBullet" count="1" scrapable="False">
-    <ingredient name="bulletTip" count="1"/>
-    <ingredient name="gunPowder" count="3"/>
     <ingredient name="bulletCasing" count="1"/>
+    <ingredient name="gunPowder" count="3"/>
+    <ingredient name="bulletTip" count="1"/>
   </recipe>
   <recipe name="762mmBullet" count="1" scrapable="True">
-    <ingredient name="bulletTip" count="1"/>
-    <ingredient name="gunPowder" count="3"/>
     <ingredient name="bulletCasing" count="1"/>
+    <ingredient name="gunPowder" count="3"/>
+    <ingredient name="bulletTip" count="1"/>
   </recipe>
   <recipe name="9mmBullet" count="1" scrapable="True">
-    <ingredient name="bulletTip" count="1"/>
-    <ingredient name="gunPowder" count="1"/>
     <ingredient name="bulletCasing" count="1"/>
+    <ingredient name="gunPowder" count="1"/>
+    <ingredient name="bulletTip" count="1"/>
   </recipe>
   <recipe name="blunderbussAmmo" count="1" scrapable="False">
+    <ingredient name="paper" count="1"/>
+    <ingredient name="gunPowder" count="1"/>
     <ingredient name="rockSmall" count="1"/>
-    <ingredient name="gunPowder" count="1"/>
-    <ingredient name="paper" count="1"/>
   </recipe>
   <recipe name="blunderbussAmmo" count="1" scrapable="False">
-    <ingredient name="scrapIron" count="1"/>
-    <ingredient name="gunPowder" count="1"/>
     <ingredient name="paper" count="1"/>
+    <ingredient name="gunPowder" count="1"/>
+    <ingredient name="scrapIron" count="1"/>
   </recipe>
   <recipe name="adobePeachBlock" count="1" scrapable="False">
     <ingredient name="clayLump" count="6"/>
@@ -707,9 +707,9 @@
     <ingredient name="unit_clay" count="1"/>
   </recipe>
   <recipe name="explodingCrossbowBolt" count="1" scrapable="False">
+    <ingredient name="steelArrowHead" count="1"/>
     <ingredient name="gunPowder" count="25"/>
     <ingredient name="ductTape" count="1"/>
-    <ingredient name="steelArrowHead" count="1"/>
     <ingredient name="wood" count="1"/>
     <ingredient name="feather" count="1"/>
   </recipe>
@@ -738,10 +738,10 @@
     <ingredient name="cobblestones" count="3"/>
   </recipe>
   <recipe name="flamingArrow" count="1" scrapable="False">
+    <ingredient name="steelArrow" count="1"/>
     <ingredient name="gunPowder" count="2"/>
     <ingredient name="cloth" count="1"/>
     <ingredient name="tallow" count="1"/>
-    <ingredient name="steelArrow" count="1"/>
   </recipe>
   <recipe name="foodYuccaJuice" count="1" scrapable="False">
     <ingredient name="plantedYucca3Harvest" count="4"/>
@@ -1100,9 +1100,9 @@
     <ingredient name="candyTin" count="1"/>
   </recipe>
   <recipe name="mineHubcap" count="1" scrapable="True">
-    <ingredient name="hubcap" count="2"/>
-    <ingredient name="scrapIron" count="1"/>
+    <ingredient name="scrapIron" count="2"/>
     <ingredient name="gunPowder" count="2"/>
+    <ingredient name="hubcap" count="1"/>
   </recipe>
   <recipe name="minibikeChassis" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
     <ingredient name="unit_iron" count="200"/>
@@ -1223,9 +1223,9 @@
     <ingredient name="wood" count="15"/>
   </recipe>
   <recipe name="repairKit" count="1" scrapable="False">
+    <ingredient name="forgedIron" count="1"/>
     <ingredient name="oil" count="1"/>
     <ingredient name="cloth" count="1"/>
-    <ingredient name="forgedIron" count="1"/>
     <ingredient name="ductTape" count="1"/>
   </recipe>
   <recipe name="rocket" count="1" scrapable="False">
@@ -1352,9 +1352,9 @@
     <ingredient name="paper" count="1"/>
   </recipe>
   <recipe name="shotgunSlug" count="1" scrapable="False">
-    <ingredient name="bulletTip" count="5"/>
-    <ingredient name="gunPowder" count="11"/>
     <ingredient name="bulletCasing" count="3"/>
+    <ingredient name="gunPowder" count="11"/>
+    <ingredient name="bulletTip" count="5"/>
   </recipe>
   <recipe name="shovelIron" count="1" scrapable="False">
     <ingredient name="forgedIron" count="4"/>
@@ -1471,19 +1471,19 @@
     <ingredient name="wood" count="5"/>
   </recipe>
   <recipe name="woodFrameBlock" count="1" scrapable="False">
-    <ingredient name="wood" count="10"/>
+    <ingredient name="wood" count="5"/>
   </recipe>
   <recipe name="woodFrameCNRFull" count="1" scrapable="False">
-    <ingredient name="wood" count="10"/>
+    <ingredient name="wood" count="5"/>
   </recipe>
   <recipe name="woodFrameCNRInside" count="1" scrapable="False">
-    <ingredient name="wood" count="10"/>
+    <ingredient name="wood" count="5"/>
   </recipe>
   <recipe name="woodFrameRamp" count="1" scrapable="False">
-    <ingredient name="wood" count="10"/>
+    <ingredient name="wood" count="5"/>
   </recipe>
   <recipe name="woodFrameWedge" count="1" scrapable="False">
-    <ingredient name="wood" count="10"/>
+    <ingredient name="wood" count="5"/>
   </recipe>
   <recipe name="woodLogPillar100" count="1" scrapable="False">
     <ingredient name="wood" count="20"/>
@@ -1526,8 +1526,8 @@
     <ingredient name="wood" count="10"/>
   </recipe>
   <recipe name="woodenBow" count="1" scrapable="False">
-    <ingredient name="yuccaFibers" count="3"/>
     <ingredient name="wood" count="6"/>
+    <ingredient name="yuccaFibers" count="3"/>
   </recipe>
   <recipe name="woodHatch1_v1" count="1" scrapable="False">
     <ingredient name="wood" count="10"/>

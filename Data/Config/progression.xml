@@ -1005,9 +1005,9 @@
     </perk>
     <perk name="Treasure Hunter" icon="treasure" description_key="treasureHunterDesc" title_key="treasureHunter" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
       <effect name="TreasureRadius">
-        <setvalue skill_level="1" value="11"/>
-        <setvalue skill_level="2" value="9"/>
-        <setvalue skill_level="3" value="7"/>
+        <setvalue skill_level="1" value="9"/>
+        <setvalue skill_level="2" value="7"/>
+        <setvalue skill_level="3" value="5"/>
       </effect>
     </perk>
   </skills>

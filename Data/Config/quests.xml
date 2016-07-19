@@ -174,24 +174,24 @@
     <reward type="SkillPoints" value="2"/>
   </quest>
   <quest id="treasure_taylor" name_key="treasure_taylor" subtitle_key="treasure_taylor_subtitle" description_key="treasure_taylor_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_taylor_offer" difficulty="medium">
-    <objective type="TreasureChest" id="treasureChest" value="500-1500"/>
+    <objective type="TreasureChest" id="treasureChest" value="1000-1750"/>
   </quest>
   <quest id="treasure_nickole" name_key="treasure_nickole" subtitle_key="treasure_nickole_subtitle" description_key="treasure_nickole_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_nickole_offer" difficulty="medium">
-    <objective type="TreasureChest" id="treasureChest" value="500-1500"/>
+    <objective type="TreasureChest" id="treasureChest" value="1000-1750"/>
   </quest>
   <quest id="treasure_stephan" name_key="treasure_stephan" subtitle_key="treasure_stephan_subtitle" description_key="treasure_stephan_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_stephan_offer" difficulty="medium">
-    <objective type="TreasureChest" id="treasureChest" value="500-1500"/>
+    <objective type="TreasureChest" id="treasureChest" value="1000-1750"/>
   </quest>
   <quest id="treasure_jennifer" name_key="treasure_jennifer" subtitle_key="treasure_jennifer_subtitle" description_key="treasure_jennifer_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_jennifer_offer" difficulty="medium">
-    <objective type="TreasureChest" id="treasureChest" value="500-1500"/>
+    <objective type="TreasureChest" id="treasureChest" value="1000-1750"/>
   </quest>
   <quest id="treasure_claude" name_key="treasure_claude" subtitle_key="treasure_claude_subtitle" description_key="treasure_claude_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_claude_offer" difficulty="medium">
-    <objective type="TreasureChest" id="treasureChest" value="500-1500"/>
+    <objective type="TreasureChest" id="treasureChest" value="1000-1750"/>
   </quest>
   <quest id="treasure_sarah" name_key="treasure_sarah" subtitle_key="treasure_sarah_subtitle" description_key="treasure_sarah_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_sarah_offer" difficulty="medium">
-    <objective type="TreasureChest" id="treasureChest" value="500-1500"/>
+    <objective type="TreasureChest" id="treasureChest" value="1000-1750"/>
   </quest>
   <quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
-    <objective type="TreasureChest" id="treasureChest" value="500-1500"/>
+    <objective type="TreasureChest" id="treasureChest" value="1000-1750"/>
   </quest>
 </quests>

@@ -177,10 +177,10 @@
   <drag_item_stack>
     <rect controller="ItemStack" width="86" height="86" pos="-43,43" disableautobackground="true">
       <sprite depth="2" name="background" width="1" height="1" color="[transparent]" type="sliced" globalopacity="true"/>
-      <sprite depth="4" name="itemIcon" width="86" height="60" atlas="ItemIconAtlas" sprite="{ItemIcon}" pos="0,-10" pivot="topleft" foregroundlayer="true"/>
+      <sprite depth="4" name="itemIcon" width="86" height="60" atlas="ItemIconAtlas" sprite="{ItemIcon}" pos="0,-10" pivot="topleft" foregroundlayer="true" color="{IconColor}"/>
       <sprite depth="3" name="durabilityBackground" height="10" color="64,64,64,0" type="sliced" pos="0, -76" foregroundlayer="true"/>
-      <sprite depth="4" name="durability" width="0" height="0" color="[transparent]" type="filled" pos="0, -76" foregroundlayer="true"/>
-      <label depth="5" name="stackValue" pos="-43,-64" width="84" height="28" text="Test" justify="center" font_size="26" color="255,255,255,255"/>
+      <sprite depth="4" name="durability" height="10" color="[transparent]" type="filled" pos="0, -76" foregroundlayer="true"/>
+      <label depth="5" name="stackValue" pos="6,-60" width="72" height="28" text="Test" effect="outline" justify="center" font_size="26"/>
     </rect>
   </drag_item_stack>
   <recipe_stack>
@@ -241,7 +241,7 @@
       <sprite depth="1" name="background" pos="-1,1" height="45" width="250" color="[darkGrey]" type="sliced" on_hover="true" style="press" sound="[recipe_click]"/>
       <sprite depth="4" name="Icon" sprite="ui_game_symbol_pen" style="icon32px" pos="8,-3" foregroundlayer="true"/>
       <sprite depth="4" name="Tracking" sprite="ui_game_symbol_check" style="icon32px" pos="48,-3" foregroundlayer="true"/>
-      <label depth="4" name="Name" pos="130,-20" width="250" height="30" text="Name" font_size="28" justify="center" pivot="center"/>
+      <label depth="4" name="Name" pos="110,-20" width="140" height="30" text="Name" font_size="28" justify="center" pivot="center"/>
       <label depth="4" name="Distance" pos="212,-20" width="60" height="30" text="0.7KM" font_size="28" justify="center" pivot="center"/>
     </rect>
   </waypoint_entry>
@@ -250,7 +250,7 @@
       <sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="254" height="49" color="[black]" type="sliced" fillcenter="false"/>
       <sprite depth="1" name="background" pos="-1,1" height="45" width="250" color="[darkGrey]" type="sliced" on_hover="true" style="press" sound="[recipe_click]"/>
       <sprite depth="4" name="Icon" sprite="ui_game_symbol_pen" style="icon32px" pos="8,-3" foregroundlayer="true"/>
-      <label depth="4" name="Name" pos="130,-20" width="250" height="28" text="Name" font_size="28" justify="center" pivot="center"/>
+      <label depth="4" name="Name" pos="110,-20" width="140" height="28" text="Name" font_size="28" justify="center" pivot="center"/>
       <label depth="4" name="Distance" pos="212,-20" width="60" height="28" text="0.7KM" font_size="28" justify="center" pivot="center"/>
     </rect>
   </invites_entry>
