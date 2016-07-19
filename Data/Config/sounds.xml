@@ -2908,6 +2908,19 @@
     <MaxEntities name="30"/>
     <MaxRepeatRate name="0.01"/>
   </SoundDataNode>
+  <SoundDataNode name="SlowSwoosh">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <AudioClip ClipName="Sounds/Misc/swoosh_slow1"/>
+    <AudioClip ClipName="Sounds/Misc/swoosh_slow2"/>
+    <AudioClip ClipName="Sounds/Misc/swoosh_slow3"/>
+    <AudioClip ClipName="Sounds/Misc/swoosh_slow4"/>
+    <LocalCrouchVolumeScale name="0.25"/>
+    <CrouchNoiseScale name="0.05"/>
+    <NoiseScale name=".1"/>
+    <MaxVoices name="3"/>
+    <MaxEntities name="30"/>
+    <MaxRepeatRate name="0.01"/>
+  </SoundDataNode>
   <SoundDataNode name="underwater_lp">
     <AudioSource name="Sounds/AudioSource_Underwater_LP"/>
     <AudioClip ClipName="Sounds/Misc/underwater_lp"/>

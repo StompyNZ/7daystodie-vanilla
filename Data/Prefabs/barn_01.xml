@@ -8,7 +8,7 @@
   <property name="AllowedTownships" value="town,rural,wilderness"/>
   <property name="Condition" value="Old"/>
   <property name="AllowedBiomes" value="plains,forest,pine_forest,desert,snow"/>
-  <property name="StaticSpawner.Class" value="SpawnCrawlersDogs"/>
+  <property name="StaticSpawner.Class" value="SpawnSmall"/>
   <property name="StaticSpawner.Size" value="32,2,32"/>
   <property name="StaticSpawner.Trigger" value="160"/>
 </prefab>

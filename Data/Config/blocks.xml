@@ -28,7 +28,6 @@
     <property name="Shape" value="Terrain"/>
     <property name="Mesh" value="terrain"/>
     <property name="Texture" value="0,2,0,0,0,0"/>
-    <drop event="Destroy" name="fertileDirt"/>
     <property name="DropScale" value="2"/>
     <property name="LPHardnessScale" value="4"/>
     <property name="Map.Color" value="55,79,58"/>
@@ -42,7 +41,6 @@
     <property name="Shape" value="Terrain"/>
     <property name="Mesh" value="terrain"/>
     <property name="Texture" value="2"/>
-    <drop event="Destroy" name="fertileDirt"/>
     <property name="DropScale" value="2"/>
     <property name="LPHardnessScale" value="2"/>
     <drop event="Destroy" name="fertileDirt"/>
@@ -3571,6 +3569,7 @@
     <property name="HeatMapStrength" value="2"/>
     <property name="HeatMapTime" value="1200"/>
     <property name="HeatMapFrequency" value="25"/>
+    <property name="BuffsWhenWalkedOn" value="burningSmall"/>
     <property name="ActiveRadiusEffects" value="+heatSource(3)"/>
     <property class="RepairItems">
       <property name="rockSmall" value="50"/>
@@ -9463,7 +9462,7 @@
   </block>
   <block id="1453" name="cntCar03Blue">
     <property name="Material" value="metal"/>
-    <property name="Class" value="Loot"/>
+    <property name="Class" value="CarExplodeLoot"/>
     <property name="LootList" value="19"/>
     <property name="Shape" value="ModelEntity"/>
     <property name="Texture" value="26"/>
@@ -9480,10 +9479,17 @@
     <property name="DowngradeBlock" value="cntCar03BlueDamage1"/>
     <property name="BigDecorationRadius" value="5"/>
     <property name="CanDecorateOnSlopes" value="false"/>
+    <property class="Explosion">
+      <property name="ParticleIndex" value="4"/>
+      <property name="RadiusBlocks" value="5"/>
+      <property name="BlockDamage" value="5000"/>
+      <property name="RadiusEntities" value="5"/>
+      <property name="EntityDamage" value="100"/>
+    </property>
   </block>
   <block id="1454" name="cntCar03BlueDamage1">
     <property name="Material" value="metal"/>
-    <property name="Class" value="Loot"/>
+    <property name="Class" value="CarExplodeLoot"/>
     <property name="LootList" value="19"/>
     <property name="Shape" value="ModelEntity"/>
     <property name="Texture" value="26"/>
@@ -9501,6 +9507,13 @@
     <property name="DowngradeBlock" value="cntCar03Damage2"/>
     <property name="BigDecorationRadius" value="5"/>
     <property name="CanDecorateOnSlopes" value="false"/>
+    <property class="Explosion">
+      <property name="ParticleIndex" value="4"/>
+      <property name="RadiusBlocks" value="5"/>
+      <property name="BlockDamage" value="5000"/>
+      <property name="RadiusEntities" value="5"/>
+      <property name="EntityDamage" value="100"/>
+    </property>
   </block>
   <block id="1455" name="cntCar03Damage2">
     <property name="Class" value="CarExplode"/>
@@ -10161,6 +10174,7 @@
       <property name="Modules" value="output"/>
     </property>
     <property name="DescriptionKey" value="cementMixerDesc"/>
+    <property name="StabilitySupport" value="false"/>
   </block>
   <block id="1562" name="bedroll">
     <property name="DescriptionKey" value="bedGroupDesc"/>

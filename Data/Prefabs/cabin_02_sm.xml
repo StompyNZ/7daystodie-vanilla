@@ -6,7 +6,7 @@
   <property name="Zoning" value="Residential"/>
   <property name="RotationToFaceNorth" value="2"/>
   <property name="AllowedTownships" value="rural,wilderness"/>
-  <property name="StaticSpawner.Class" value="SpawnSpawn"/>
+  <property name="StaticSpawner.Class" value="SpawnSmall"/>
   <property name="StaticSpawner.Size" value="32,2,32"/>
   <property name="StaticSpawner.Trigger" value="160"/>
 </prefab>

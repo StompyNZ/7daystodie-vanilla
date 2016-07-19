@@ -252,6 +252,7 @@
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
       <sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="{ItemGroupIcon}"/>
       <label depth="2" name="windowName" pos="39,-6" width="500" height="32" text="{ItemName}" font_size="32"/>
+      <label depth="2" name="ammoName" pos="95,-6" width="500" height="32" text="{ItemAmmoName}" font_size="32" justify="right" color="[disabledLabelColor]"/>
     </panel>
     <rect name="contentCraftingInfo" height="381" depth="1" pos="0,-46">
       <sprite depth="5" name="backgroundMain" sprite="menu_empty3px" width="603" height="380" color="[black]" type="sliced" fillcenter="false"/>
@@ -307,7 +308,7 @@
   </window>
   <window name="windowToolsForge" width="228" height="121" panel="Right">
     <panel style="header.panel">
-      <sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
+      <sprite style="header.icon" sprite="ui_game_symbol_wrench"/>
       <label style="header.name" text="TOOLS" text_key="xuiTools"/>
     </panel>
     <rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
@@ -395,8 +396,8 @@
   </window>
   <window name="windowForgeInput" width="228" height="204" panel="Right" controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay">
     <panel style="header.panel">
-      <sprite style="header.icon" sprite="ui_game_symbol_campfire"/>
-      <label style="header.name" text="INPUT" text_key="xuiInput"/>
+      <sprite style="header.icon" sprite="ui_game_symbol_forge"/>
+      <label style="header.name" text="INPUT" text_key="xuiSmelting"/>
     </panel>
     <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="153" color="[black]" type="sliced" fillcenter="false" on_press="true"/>
     <rect name="content" depth="1" pos="0,-46" height="153">
@@ -413,7 +414,7 @@
   </window>
   <window name="windowOutput" width="228" height="152" anchor="CenterTop" panel="Right">
     <panel style="header.panel">
-      <sprite style="header.icon" sprite="ui_game_symbol_campfire"/>
+      <sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
       <label style="header.name" text="OUTPUT" text_key="xuiOutput"/>
     </panel>
     <rect name="content" depth="0" pos="0,-46" height="150" disablefallthrough="true" on_press="true">
@@ -920,7 +921,7 @@
   </window>
   <window name="windowVehicleStorage" width="228" height="262" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]">
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-      <sprite depth="1" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_minibike"/>
+      <sprite depth="1" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_loot_sack"/>
       <label style="header.name" text="MINIBIKE STORAGE" text_key="xuiMinibikeStorage"/>
     </panel>
     <grid depth="2" name="inventory" rows="6" cols="3" pos="3,-46" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">

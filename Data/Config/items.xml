@@ -1587,10 +1587,6 @@
     <property name="Stacknumber" value="500"/>
     <property name="Weight" value="5"/>
     <property name="Group" value="Ammo/Weapons"/>
-    <property class="Attributes">
-      <property name="GetQualityFromWeapon" value="true"/>
-      <property name="EntityDamage" value="0,0"/>
-    </property>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="151" name="10mmBullet">
@@ -1600,10 +1596,6 @@
     <property name="Stacknumber" value="500"/>
     <property name="Weight" value="5"/>
     <property name="Group" value="Ammo/Weapons"/>
-    <property class="Attributes">
-      <property name="GetQualityFromWeapon" value="true"/>
-      <property name="EntityDamage" value="0,0"/>
-    </property>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="152" name="44MagBullet">
@@ -1622,10 +1614,6 @@
     <property name="Stacknumber" value="500"/>
     <property name="Weight" value="5"/>
     <property name="Group" value="Ammo/Weapons"/>
-    <property class="Attributes">
-      <property name="GetQualityFromWeapon" value="true"/>
-      <property name="EntityDamage" value="0,0"/>
-    </property>
     <property name="CraftingSkillGroup" value="Gun Smithing"/>
   </item>
   <item id="156" name="shotgunShell">
@@ -4388,10 +4376,10 @@
     <property name="ActionExp" value="10"/>
   </item>
   <item id="671" name="brokenGlass">
-    <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+    <property name="Meshfile" value="Items/Misc/brokenGlassPrefab"/>
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-    <property name="HoldType" value="45"/>
     <property name="Material" value="glass"/>
+    <property name="HoldType" value="23"/>
     <property name="Stacknumber" value="1000"/>
     <property name="Weight" value="5"/>
     <property class="Action1">
@@ -6464,7 +6452,7 @@
     <property name="Weight" value="1"/>
     <property name="Group" value="Resources"/>
     <property name="ResourceUnit" value="true"/>
-    <property name="MeltTimePerUnit" value="0.5"/>
+    <property name="MeltTimePerUnit" value="0.25"/>
     <property name="UserHidden" value="true"/>
     <property name="CraftingIngredientTime" value="0.5"/>
     <property name="IsDeveloper" value="true"/>

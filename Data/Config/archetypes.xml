@@ -19,7 +19,7 @@
         <texture name="male_torso" color="255,255,255"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="255,255,255"/>
+        <texture name="male_legs" color="255,255,255"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="255,255,255"/>
@@ -277,7 +277,7 @@
         <texture name="male_torso" color="255,255,255"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="255,255,255"/>
+        <texture name="male_legs" color="255,255,255"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="255,255,255"/>
@@ -539,7 +539,7 @@
         <texture name="male_torso" color="170,138,105"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="170,138,105"/>
+        <texture name="male_legs" color="170,138,105"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="170,138,105"/>
@@ -803,7 +803,7 @@
         <texture name="male_torso" color="200,175,175"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="200,175,175"/>
+        <texture name="male_legs" color="200,175,175"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="200,175,175"/>
@@ -1070,7 +1070,7 @@
         <texture name="male_torso" color="69,59,43"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="69,59,43"/>
+        <texture name="male_legs" color="69,59,43"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="69,59,43"/>
@@ -1334,7 +1334,7 @@
         <texture name="male_torso" color="59,39,33"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="59,39,33"/>
+        <texture name="male_legs" color="59,39,33"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="59,39,33"/>
@@ -1608,7 +1608,7 @@
         <texture name="male_torso" color="200,200,200"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="200,200,200"/>
+        <texture name="male_legs" color="200,200,200"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="255,200,200"/>
@@ -2013,7 +2013,7 @@
         <texture name="male_torso" color="175,185,175"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="175,185,175"/>
+        <texture name="male_legs" color="175,185,175"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="175,185,175"/>
@@ -2145,7 +2145,7 @@
         <texture name="male_torso" color="200,200,200"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="200,200,200"/>
+        <texture name="male_legs" color="200,200,200"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="255,200,200"/>
@@ -2281,7 +2281,7 @@
         <texture name="male_torso" color="190,175,175"/>
       </part>
       <part slot="legs" layer="base" mesh="male_base_legs">
-        <texture name="male_torso" color="190,175,175"/>
+        <texture name="male_legs" color="190,175,175"/>
       </part>
       <part slot="feet" layer="base" mesh="male_base_feet">
         <texture name="male_feet" color="190,175,175"/>
