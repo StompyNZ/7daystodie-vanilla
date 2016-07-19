@@ -1174,8 +1174,8 @@
   <recipe name="potatoSeed" count="1" scrapable="False">
     <ingredient name="potato" count="1"/>
   </recipe>
-  <recipe name="rScrapIronPlate" count="1" scrapable="True">
-    <ingredient name="scrapIron" count="3"/>
+  <recipe name="rScrapIronPlate" count="1">
+    <ingredient name="scrapIron" count="16"/>
   </recipe>
   <recipe name="rScrapIronPlateMine" count="1" scrapable="True">
     <ingredient name="gunPowder" count="3"/>

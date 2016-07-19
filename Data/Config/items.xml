@@ -5003,7 +5003,7 @@
     <property name="Material" value="organic"/>
     <property name="HoldType" value="23"/>
     <property name="Stacknumber" value="500"/>
-    <property name="CraftingIngredientTime" value="5"/>
+    <property name="CraftingIngredientTime" value="8"/>
     <property class="Action1">
       <property name="Class" value="Eat"/>
       <property name="Delay" value="1.0"/>
@@ -5110,6 +5110,7 @@
     <property name="Material" value="organic"/>
     <property name="HoldType" value="23"/>
     <property name="Stacknumber" value="500"/>
+    <property name="CraftingIngredientTime" value="5"/>
     <property class="Action1">
       <property name="Class" value="Eat"/>
       <property name="Delay" value="1.0"/>
@@ -5147,7 +5148,7 @@
     <property name="Weight" value="5"/>
     <property name="HoldType" value="14"/>
     <property name="Stacknumber" value="15"/>
-    <property name="CraftingIngredientTime" value="20"/>
+    <property name="CraftingIngredientTime" value="10"/>
     <property class="Action1">
       <property name="Class" value="Eat"/>
       <property name="Delay" value="1"/>
@@ -5193,7 +5194,7 @@
     <property name="HoldType" value="3"/>
     <property name="Stacknumber" value="15"/>
     <property name="Weight" value="10"/>
-    <property name="CraftingIngredientTime" value="20"/>
+    <property name="CraftingIngredientTime" value="10"/>
     <property class="Action1">
       <property name="Class" value="Eat"/>
       <property name="Delay" value="1"/>
@@ -6040,7 +6041,7 @@
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="1000"/>
     <property name="Group" value="Resources"/>
-    <property name="CraftingIngredientTime" value="1"/>
+    <property name="CraftingIngredientTime" value="2"/>
   </item>
   <item id="1347" name="gunPowder">
     <property name="Meshfile" value="Items/Crafting/gun_powderPrefab"/>
@@ -6173,6 +6174,7 @@
     <property name="Weight" value="5"/>
     <property name="HoldType" value="14"/>
     <property name="Stacknumber" value="500"/>
+    <property name="CraftingIngredientTime" value="9"/>
     <property class="Action1">
       <property name="Class" value="ExchangeItem"/>
       <property name="Delay" value="1.0"/>
@@ -6192,8 +6194,8 @@
     <property name="Material" value="glass"/>
     <property name="HoldType" value="3"/>
     <property name="Stacknumber" value="15"/>
-    <property name="Weight" value="15"/>
-    <property name="CraftingIngredientTime" value="15"/>
+    <property name="Weight" value="10"/>
+    <property name="CraftingIngredientTime" value="9"/>
     <property class="Action1">
       <property name="Class" value="ExchangeItem"/>
       <property name="Delay" value="1.0"/>
@@ -6566,7 +6568,7 @@
     <property name="Material" value="leather"/>
     <property name="HoldType" value="45"/>
     <property name="Stacknumber" value="1"/>
-    <property name="Weight" value="10"/>
+    <property name="Weight" value="100"/>
     <property name="Group" value="Resources"/>
     <property name="CraftingSkillGroup" value="Tool Smithing"/>
   </item>
