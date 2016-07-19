@@ -895,6 +895,7 @@
       <property name="ToBlock" value="concretePlate"/>
     </property>
     <property name="DowngradeBlock" value="scrapIronPlate"/>
+    <property name="Group" value="Tools/Traps,Building"/>
   </block>
   <block id="169" name="rConcretePlate">
     <property name="Extends" value="rConcreteMaster"/>
@@ -1872,7 +1873,7 @@
     <property name="Mesh" value="cutout"/>
     <property name="Texture" value="360"/>
     <property name="Collide" value="sight,movement,melee,rocket"/>
-    <property name="Group" value="Building"/>
+    <property name="Group" value="Decor/Miscellaneous"/>
     <property class="RepairItems">
       <property name="cloth" value="10"/>
     </property>
@@ -1988,7 +1989,7 @@
     <property name="HeatMapFrequency" value="25"/>
     <property name="BuffsWhenWalkedOn" value="burningSmall"/>
     <property name="ActiveRadiusEffects" value="+heatSource(3)"/>
-    <property name="Group" value="Food/Cooking,Basics"/>
+    <property name="Group" value="Food/Cooking,Basics,Building"/>
     <drop event="Destroy" name="[recipe]" count="1"/>
     <property class="Workstation">
       <property name="Modules" value="tools,output,fuel,input"/>
@@ -2348,7 +2349,7 @@
     <property name="ParticleName" value="torch_wall"/>
     <property name="CanPickup" value="true" param1="torch"/>
     <drop event="Destroy" name="torch" count="1"/>
-    <property name="Group" value="Building"/>
+    <property name="Group" value="Basics,Decor/Miscellaneous"/>
   </block>
   <block id="352" name="graveStone01">
     <property name="Material" value="stone"/>
@@ -2462,6 +2463,7 @@
     <property name="DowngradeBlock" value="cntDeskSafeInsecure"/>
     <drop event="Destroy" count="0" prob="1"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1"/>
+    <property name="Group" value="Building"/>
   </block>
   <block id="367" name="cntWallSafe">
     <property name="Class" value="SecureLoot"/>
@@ -2478,6 +2480,7 @@
     <property name="DowngradeBlock" value="cntWallSafeInsecure"/>
     <drop event="Destroy" count="0" prob="1"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1"/>
+    <property name="Group" value="Building"/>
   </block>
   <block id="368" name="cntCorpseLoot02">
     <property name="Extends" value="cntCorpseLoot01"/>
@@ -2522,6 +2525,7 @@
     </property>
     <drop event="Destroy" count="0" prob="1"/>
     <property name="CanPickup" value="true"/>
+    <property name="Group" value="Resources,Decor/Miscellaneous"/>
   </block>
   <block id="374" name="cinderBlocks01">
     <property name="Material" value="rubble"/>
@@ -2622,6 +2626,7 @@
     </property>
     <drop event="Destroy" name="scrapIron" count="1,2" prob="1"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1"/>
+    <property name="Group" value="Building,Decor/Miscellaneous"/>
   </block>
   <block id="385" name="metalTrussingBlock">
     <property name="Material" value="Mmetal_medium"/>
@@ -2796,6 +2801,7 @@
     <property name="Stacknumber" value="1"/>
     <drop event="Destroy" name="keystoneBlock" count="1"/>
     <drop event="Fall" name="keystoneBlock" count="1" prob="1" stick_chance="0"/>
+    <property name="Group" value="Building"/>
   </block>
   <block id="408" name="trapSpikesNew">
     <property name="Class" value="Spikes"/>
@@ -3113,6 +3119,7 @@
     <drop event="Harvest" name="spring" count="5" prob="0.5" tool_category="Disassemble"/>
     <drop event="Harvest" name="plantedCotton3Harvest" count="5" tool_category="Disassemble"/>
     <drop event="Destroy" name="scrapIron" count="1"/>
+    <property name="Group" value="Building,Decor/Miscellaneous"/>
   </block>
   <block id="464" name="bed01Frame">
     <property name="Material" value="Mmetal_weak"/>
@@ -3836,6 +3843,7 @@
     <property name="ModelOffset" value="0,-0.3,0"/>
     <property name="MultiBlockDim" value="2,6,2"/>
     <property name="BigDecorationRadius" value="3"/>
+    <property name="ParticleOnDeath" value="treeGib_burnt_small"/>
     <property name="UpwardsCount" value="8"/>
     <drop event="Harvest" name="wood" count="400"/>
     <drop event="Destroy" name="wood" count="200" prob="1"/>
@@ -4316,7 +4324,7 @@
     <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
     <property name="LPHardnessScale" value="8"/>
     <property name="DowngradeBlock" value="cntStorageChest"/>
-    <property name="Group" value="Decor,Basics"/>
+    <property name="Group" value="Basics,Building"/>
     <property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
   </block>
   <block id="640" name="rockResource02">
@@ -6618,6 +6626,7 @@
     <property name="FuelValue" value="24"/>
     <property name="DescriptionKey" value="woodFrameGroupDesc"/>
     <drop event="Destroy" name="wood" count="1" prob="1"/>
+    <property name="Group" value="Building"/>
   </block>
   <block id="978" name="asphaltBlock">
     <property name="Extends" value="concreteBlock"/>
@@ -7052,6 +7061,7 @@
     <property name="DescriptionKey" value="woodFrameGroupDesc"/>
     <drop event="Destroy" name="wood" count="1" prob="1"/>
     <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+    <property name="Group" value="Building"/>
   </block>
   <block id="1064" name="tanStuccoPlasterMiddleBlock">
     <property name="Extends" value="woodBlock"/>
@@ -8213,7 +8223,7 @@
     <property name="Mesh" value="models"/>
     <property name="Model" value="Lighting/torch_wall_holder" param1="main_mesh"/>
     <property name="Place" value="TowardsPlacerInverted"/>
-    <property name="Group" value="Building"/>
+    <property name="Group" value="Basics,Decor/Miscellaneous"/>
     <property class="UpgradeBlock">
       <property name="ToBlock" value="wallTorch"/>
       <property name="Item" value="torch"/>
@@ -9162,6 +9172,7 @@
     </property>
     <drop event="Destroy" count="0"/>
     <property name="DowngradeBlock" value="window03WoodBroke1"/>
+    <property name="Group" value="Building"/>
   </block>
   <block id="1414" name="window03WoodFrame">
     <property name="Extends" value="window03WoodBroke2"/>
@@ -9657,6 +9668,7 @@
     <drop event="Harvest" name="spring" count="10" prob="0.5" tool_category="Disassemble"/>
     <drop event="Harvest" name="plantedCotton3Harvest" count="10" tool_category="Disassemble"/>
     <drop event="Destroy" name="scrapIron" count="2"/>
+    <property name="Group" value="Building,Decor/Miscellaneous"/>
   </block>
   <block id="1468" name="cntCoffin">
     <property name="Class" value="Loot"/>
@@ -10212,7 +10224,7 @@
     <property name="FuelValue" value="6"/>
     <property name="CanPickup" value="true"/>
     <property name="IsTerrainDecoration" value="true"/>
-    <property name="Group" value="Building,Basics"/>
+    <property name="Group" value="Basics,Building"/>
     <property class="RepairItems">
       <property name="yuccaFibers" value="10"/>
     </property>

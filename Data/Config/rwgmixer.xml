@@ -440,6 +440,7 @@
       <prefab name="army_camp_01"/>
       <prefab name="army_camp_02"/>
       <prefab name="army_camp_03"/>
+      <prefab name="army_barracks_01"/>
     </prefab_rule>
     <prefab_rule name="wildernessMisc">
       <prefab name="houseburnt5"/>

@@ -166,7 +166,7 @@
       <property name="Delay" value="0.5"/>
       <property name="Blockname" value="wallTorch"/>
     </property>
-    <property name="Group" value="Building,Basics"/>
+    <property name="Group" value="Basics,Decor/Miscellaneous"/>
     <property name="DescriptionKey" value="torchDesc"/>
   </item>
   <item id="17" name="flashlight02">
@@ -5944,7 +5944,7 @@
     <property name="Material" value="stone"/>
     <property name="HoldType" value="45"/>
     <property name="Stacknumber" value="1000"/>
-    <property name="Group" value="Building"/>
+    <property name="Group" value="Building,Resources"/>
   </item>
   <item id="1324" name="concreteMix">
     <property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
@@ -6439,6 +6439,7 @@
       <property name="Delay" value="0.5"/>
       <property name="Blockname" value="candleWall"/>
     </property>
+    <property name="Group" value="Basics,Decor/Miscellaneous"/>
   </item>
   <item id="1431" name="smallEngine">
     <property name="PartType" value="Receiver"/>
