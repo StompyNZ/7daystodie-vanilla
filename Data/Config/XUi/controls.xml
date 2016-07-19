@@ -65,7 +65,7 @@
     <rect height="43" style="press, hover, scroll" controller="RecipeEntry" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]">
       <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false"/>
       <sprite depth="3" name="background" width="100%" height="45" pos="0,1" color="[darkGrey]" type="sliced"/>
-      <sprite depth="4" name="Icon" atlas="ItemIconAtlas" sprite="{RecipeIcon}" size="52,38" pos="8,-3" foregroundlayer="true"/>
+      <sprite depth="4" name="Icon" atlas="ItemIconAtlas" sprite="{RecipeIcon}" color="{RecipeIconTint}" size="52,38" pos="8,-3" foregroundlayer="true"/>
       <label depth="4" name="Name" pos="195,-19" width="250" height="30" text="{RecipeName}" font_size="28" color="{HasIngredientsStateColor}" justify="center" pivot="center"/>
       <sprite depth="5" name="Favorite" sprite="server_favorite" size="14,14" pos="6,-4" visible="{IsFavorite}" foregroundlayer="true"/>
       <sprite depth="4" name="Unlocked" sprite="{UnlockIcon}" size="24,24" pos="352,-10" visible="{IsUnlockable}" color="{UnlockStateColor}" foregroundlayer="true"/>
