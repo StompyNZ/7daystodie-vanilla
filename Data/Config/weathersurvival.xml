@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <weathersurvival>
   <property name="GeneratedHeatDecayRate" value="2"/>
   <property name="DegreesPerPointOfStaminaUsed" value="0.25"/>

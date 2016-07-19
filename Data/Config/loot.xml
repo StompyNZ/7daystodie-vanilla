@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <lootcontainers>
   <lootplaceholders>
     <placeholder name="lootForest">
@@ -413,7 +413,6 @@
     <item name="leatherHoodSchematic"/>
     <item name="leatherJacketSchematic"/>
     <item name="leatherPantsSchematic"/>
-    <item name="leatherTanning"/>
     <item name="pistolBook"/>
     <item name="pumpShotgunSchematic"/>
     <item name="sawedoffPumpShotgunSchematic"/>
@@ -658,6 +657,7 @@
     <item name="smallEngine"/>
     <item name="pickaxeSteel"/>
     <item name="fireaxeSteel"/>
+    <item name="shovelSteel"/>
     <item name="sledgehammerSchematic" prob="0.05"/>
     <item name="calipers" prob="0.05"/>
     <item name="toolAndDieSet" prob="0.05"/>

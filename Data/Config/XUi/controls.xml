@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <controls>
   <slider>
     <rect depth="1" controller="Slider" height="24" style="scroll">
@@ -138,7 +138,7 @@
       <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false"/>
       <sprite depth="3" name="background" sprite="menu_empty3px" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
       <sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
-      <sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{ItemIcon}" pos="35,-30" pivot="center" foregroundlayer="true"/>
+      <sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{ItemIcon}" pos="35,-30" pivot="center" foregroundlayer="true" color="{IconColor}"/>
       <sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true"/>
       <sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -60" foregroundlayer="true"/>
       <sprite depth="4" name="durability" width="70" height="10" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -60" foregroundlayer="true"/>

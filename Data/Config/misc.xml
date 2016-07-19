@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <iteminfo>
   <animation>
     <hold_type id="0" newmodel="false" ray_cast="0.16" unholster="0.2"/>

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <vehicles>
   <vehicle name="minibike">
     <property name="prefab" value="Entities/Vehicles/minibike_Prefab"/>

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <progression>
   <player max_level="200" exp_to_level="4000" experience_multiplier="1.01" skill_points_per_level="5" skill_point_multiplier="0"/>
   <skills max_level="100" exp_to_level="250" experience_multiplier="1.03" skill_point_cost_multiplier="0" skill_point_cost_per_level="1">
@@ -141,7 +141,6 @@
       <requirement perk_level="3" required_skill_name="Blade Weapons" required_skill_level="40"/>
       <requirement perk_level="4" required_skill_name="Blade Weapons" required_skill_level="60"/>
       <requirement perk_level="5" required_skill_name="Blade Weapons" required_skill_level="80"/>
-      <trigger name="Blade Weapons"/>
       <effect name="EntityDamage">
         <multiply skill_level="1" value="1.1125"/>
         <multiply skill_level="2" value="1.225"/>
@@ -207,6 +206,7 @@
       <requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="40"/>
       <recipe name="pickaxeSteel" unlock_level="1"/>
       <recipe name="fireaxeSteel" unlock_level="1"/>
+      <recipe name="shovelSteel" unlock_level="1"/>
       <recipe name="forgedSteel" unlock_level="1"/>
       <recipe name="steelArrowHead" unlock_level="1"/>
     </perk>
@@ -231,7 +231,6 @@
       <requirement perk_level="3" required_skill_name="Pistols" required_skill_level="40"/>
       <requirement perk_level="4" required_skill_name="Pistols" required_skill_level="60"/>
       <requirement perk_level="5" required_skill_name="Pistols" required_skill_level="80"/>
-      <trigger name="Pistols"/>
       <effect name="EntityDamage">
         <multiply skill_level="1" value="1.1125"/>
         <multiply skill_level="2" value="1.225"/>
@@ -267,7 +266,6 @@
       <requirement perk_level="3" required_skill_name="Shotguns" required_skill_level="40"/>
       <requirement perk_level="4" required_skill_name="Shotguns" required_skill_level="60"/>
       <requirement perk_level="5" required_skill_name="Shotguns" required_skill_level="80"/>
-      <trigger name="Shotguns"/>
       <effect name="EntityDamage">
         <multiply skill_level="1" value="1.1125"/>
         <multiply skill_level="2" value="1.225"/>
@@ -737,6 +735,10 @@
         <multiply skill_level="90,100" value="0.14,0.10"/>
       </effect>
     </crafting_skill>
+    <perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10">
+      <requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="1"/>
+      <recipe name="leather" unlock_level="1"/>
+    </perk>
     <crafting_skill name="Armor Smithing" exp_to_level="100" icon="forge" description_key="armorerDesc" title_key="armorer">
       <effect name="CraftingTime">
         <multiply skill_level="1,10" value="1.00,0.70"/>
@@ -861,7 +863,7 @@
         <multiply skill_level="90,100" value="0.14,0.10"/>
       </effect>
     </crafting_skill>
-    <perk name="The Survivor" icon="quality_joe" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="10">
+    <perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="10">
       <requirement perk_level="1" required_player_level="1"/>
       <requirement perk_level="2" required_player_level="10"/>
       <requirement perk_level="3" required_player_level="20"/>
@@ -896,7 +898,7 @@
         <multiply perk_level="5" value="0.5"/>
       </effect>
     </perk>
-    <perk name="The Camel" icon="quality_joe" description_key="theCamelDesc" title_key="theCamel" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" passive_effect="true">
+    <perk name="The Camel" icon="run" description_key="theCamelDesc" title_key="theCamel" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" passive_effect="true">
       <requirement perk_level="1" required_player_level="1"/>
       <requirement perk_level="2" required_player_level="10"/>
       <requirement perk_level="3" required_player_level="20"/>
@@ -924,7 +926,7 @@
         <multiply skill_level="5" value="0.5"/>
       </effect>
     </perk>
-    <perk name="The Fixer" icon="quality_joe" description_key="theFixerDesc" title_key="theFixer" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" passive_effect="true">
+    <perk name="The Fixer" icon="wrench" description_key="theFixerDesc" title_key="theFixer" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" passive_effect="true">
       <requirement perk_level="1" required_player_level="1"/>
       <requirement perk_level="2" required_player_level="10"/>
       <requirement perk_level="3" required_player_level="20"/>
@@ -958,7 +960,6 @@
       <requirement perk_level="3" required_skill_name="Blunt Weapons" required_skill_level="40"/>
       <requirement perk_level="4" required_skill_name="Blunt Weapons" required_skill_level="60"/>
       <requirement perk_level="5" required_skill_name="Blunt Weapons" required_skill_level="80"/>
-      <trigger name="Blunt Weapons"/>
       <effect name="EntityDamage">
         <multiply skill_level="1" value="1.1125"/>
         <multiply skill_level="2" value="1.225"/>
@@ -980,7 +981,6 @@
       <requirement perk_level="3" required_skill_name="Mining Tools" required_skill_level="40"/>
       <requirement perk_level="4" required_skill_name="Mining Tools" required_skill_level="60"/>
       <requirement perk_level="5" required_skill_name="Mining Tools" required_skill_level="80"/>
-      <trigger name="Mining Tools"/>
       <effect name="BlockDamage">
         <multiply skill_level="1" value="1.2"/>
         <multiply skill_level="2" value="1.4"/>

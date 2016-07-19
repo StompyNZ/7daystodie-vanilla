@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <buffs>
   <buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);damage(0,5,0,0)" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" icon="ui_game_symbol_critical" cures="bandage,firstAidBandage,firstAidKit">
     <modify id="0" stat="stamina" amount="-1" rate="1"/>

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <recipes>
   <recipe name="militaryFiber" count="1" scrapable="False" tooltip="ttScrapMetalBrass">
     <wildcard_forge_category/>
@@ -275,7 +275,7 @@
   </recipe>
   <recipe name="bellows" count="1" scrapable="False">
     <ingredient name="wood" count="8"/>
-    <ingredient name="animalHide" count="24"/>
+    <ingredient name="animalHide" count="20"/>
     <ingredient name="shortMetalPipe" count="1"/>
   </recipe>
   <recipe name="bioFuel" count="1" scrapable="False" craft_area="campfire" craft_tool="beaker">
@@ -609,7 +609,7 @@
   <recipe name="concreteHalf" count="1" scrapable="False">
     <ingredient name="concreteMix" count="10"/>
   </recipe>
-  <recipe name="concreteMix" count="1" scrapable="False" craft_area="backpack">
+  <recipe name="concreteMix" count="1" scrapable="False">
     <ingredient name="crushedSand" count="1"/>
     <ingredient name="rockSmall" count="2"/>
     <ingredient name="cement" count="1"/>
@@ -1358,6 +1358,10 @@
   </recipe>
   <recipe name="shovelIron" count="1" scrapable="False">
     <ingredient name="forgedIron" count="4"/>
+    <ingredient name="wood" count="5"/>
+  </recipe>
+  <recipe name="shovelSteel" count="1" scrapable="False">
+    <ingredient name="forgedSteel" count="5"/>
     <ingredient name="wood" count="5"/>
   </recipe>
   <recipe name="sledgehammer" count="1" scrapable="False">

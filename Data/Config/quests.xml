@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <quests>
   <quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" name="Basic Survival 1/8" name_key="quest_BasicSurvival1" subtitle="Craft a Stone Axe" subtitle_key="quest_BasicSurvival1_subtitle" description_key="quest_BasicSurvival1_description" icon="ui_game_symbol_hammer" category_key="Quest" offer_key="quest_BasicSurvival_offer">
     <action type="ShowTip" value="tutorialTipQuest02"/>
@@ -138,7 +138,7 @@
       <requirement type="Holding" id="fireaxeSteel"/>
     </requirement>
     <reward type="SkillPoints" value="1"/>
-    <reward type="Recipe" id="leather" optional="true"/>
+    <reward type="SkillPoints" value="1" optional="true"/>
   </quest>
   <quest id="challenge_killthewabbit" name_key="challenge_killthewabbit" subtitle_key="challenge_killthewabbit_subtitle" description_key="challenge_killthewabbit_offer" icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" offer_key="challenge_killthewabbit_offer" difficulty="medium">
     <objective type="AnimalKill" id="animalRabbit" value="5"/>

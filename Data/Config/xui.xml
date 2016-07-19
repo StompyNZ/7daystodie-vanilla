@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xui>
   <ruleset name="default" scale="1.255" stackpanel_scale="1.05">
     <window_group name="crafting" controller="XUiC_CraftingWindowGroup">
